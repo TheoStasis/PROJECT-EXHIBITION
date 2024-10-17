@@ -1,5 +1,5 @@
 body{
-    background: url('./PROJECT/images/Figma-images/Desktop\ -\ 12.png') rgba(0,0,0,0.3);
+    background: url('./PROJECT/images/Figma-images/Onion.png') rgba(0,0,0,0.3);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
@@ -81,7 +81,8 @@ body{
         body{
             height: 100vh;
         }
-    }
+}
+
     
 
 
