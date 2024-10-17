@@ -4,7 +4,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    height:100%;
 
 }
 .hero{
@@ -77,6 +77,9 @@ body{
 @media (min-width: 768px) {
         .button-custom1 {
             margin-right: 2.5rem; /* Equivalent to me-md-2 */
+        }
+        body{
+            height: 100vh;
         }
     }
     
