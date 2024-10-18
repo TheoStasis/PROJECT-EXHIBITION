@@ -1,0 +1,14 @@
+body {
+    background-image: url(Gradient.png);
+}
+
+.navbar {
+    border-style: solid;
+    border-color: black;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color:grey;
+}
+
+
