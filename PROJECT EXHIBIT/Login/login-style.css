@@ -82,10 +82,12 @@ body {
 }
 .nav{
     margin-bottom: 2rem;
+    
+
 }
 .cont {
     min-height: 90vh;
-    margin-top: 1vw
+    margin-top: 1vw;
 }
 
 /* Login section */
@@ -111,11 +113,14 @@ body {
    margin: 1vw 2vw;
    height: 4vh;
    border-radius: 20px;
-   border-style:none;
-   background-color: rgb(189, 188, 188);
    padding: 2rem;
    font-family: "Raleway", sans-serif;
    font-weight: 600;
+   background: rgba(239, 239, 239, 0.517);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .ph-no::placeholder, .password::placeholder {
     color: black;
