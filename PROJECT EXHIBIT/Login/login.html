@@ -3,30 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivo | Login</title>
-
+    <title>Login | Delivo</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <div class="main">
-        <nav class="navbar">
-            <img src="delivo.svg">
-            <div class="button-section">
-                <button class="nav-button">Catalogue</button>
-                <button class="nav-button">Our Vendors</button>
-                <button class="nav-button">About Us</button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand  col col-lg-2" href="#"><div class="logo"><img src="delivo.svg"></div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col col-lg-9" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catalogue
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">About us</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Our vendors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="     Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-lg cont">
+        <div class="row">
+            <div class="col-md-5 login-section">
+                <div class="sub-login">
+                    <div class="sign-up">Sign Up</div>
+                    <hr>
+                    <input type="text" placeholder="Phone No." class="ph-no">
+                    <input type="password" placeholder="Password" class="password">
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-dark sign-up-btn">Sign Up</button>
+                    </div>    
+                </div>
             </div>
-            <div class="nav-right-section">
-                <input type="text" placeholder="Search" class="search-bar">
-                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-                <div class="profile-icon"></div>
-            </div>
-        </nav>
-        <div class="login-area"></div>
-        <div class="content"></div>
 
 
-        <script src="https://kit.fontawesome.com/2974af2fca.js" crossorigin="anonymous"></script>
-    </div>
+<!-- img display -->
+            <div class="col d-none d-md-block carousel">
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+                <div class="container"></div>
+            </div> 
+        </div>            
+      </div>
 </body>
 </html>

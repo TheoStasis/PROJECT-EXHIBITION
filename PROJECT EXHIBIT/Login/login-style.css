@@ -1,14 +1,143 @@
+@keyframes hero-gradient-animation {
+    0% {
+        --y-0: 56%;
+        --x-0: 13%;
+        --c-0: hsla(338.82352941176464, 100%, 95%, 1);
+        --s-start-0: 11%;
+        --s-end-0: 85%;
+    }
+
+    25% {
+        --y-0: 80%;
+        --x-0: 45%;
+        --c-0: hsla(105.88235294117652, 58%, 73%, 1);
+        --s-start-0: 18%;
+        --s-end-0: 91.11735644972468%;
+    }
+
+    50% {
+        --y-0: 52%;
+        --x-0: 84%;
+        --c-0: hsla(42.352941176470594, 69%, 72%, 1);
+        --s-start-0: 35.87621923239834%;
+        --s-end-0: 84%;
+    }
+
+    75% {
+        --y-0: 22%;
+        --x-0: 50%;
+        --c-0: hsla(218.38235294117646, 78%, 76%, 1);
+        --s-start-0: 58.70204953113234%;
+        --s-end-0: 84%;
+    }
+
+    100% {
+        --y-0: 56%;
+        --x-0: 13%;
+        --c-0: hsla(336.92307692307696, 100%, 94%, 1);
+        --s-start-0: 74.48200345326619%;
+        --s-end-0: 84%;
+    }
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 56%
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(338.82352941176464, 100%, 95%, 1)
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 11%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
 body {
-    background-image: url(Gradient.png);
+    --y-0: 56%;
+    --x-0: 13%;
+    --c-0: hsla(338.82352941176464, 100%, 95%, 1);
+    ;
+    background-color: hsla(88, 0%, 100%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0));
+    animation: hero-gradient-animation 10s linear infinite normal;
+    background-blend-mode: multiply;
 }
 
-.navbar {
+.cont {
     border-style: solid;
-    border-color: black;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    background-color:grey;
+    min-height: 90vh;
+}
+
+.carousel {
+    height: 90vh;
+    margin: 1vw;
+    margin-top: 1vw;
+}
+.carousel-img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
+/* Login section */
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.sub-login{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sign-up {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 2vw;
+}
+.ph-no, .password {
+   margin: 1vw 2vw;
+   height: 8vh;
+   border-radius: 20px;
+   border-style:none;
+   background-color: rgb(189, 188, 188);
+   padding: 2rem;
+   font-family: "Raleway", sans-serif;
+   font-weight: 600;
+}
+.ph-no::placeholder, .password::placeholder {
+    color: black;
+}
+.sign-up-btn {
+    height: 8vh;
+    margin: 2vw 8vw 2vw 8vw;
+}
+hr{
+    border: none;
+    height: 6px;   
+    background-color:black;
+    border-radius: 10px;       
+    margin: 20px auto;
+}
