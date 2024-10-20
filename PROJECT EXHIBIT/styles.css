@@ -329,7 +329,7 @@ input {
 }
 
   
-  .card {
+.card {
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     position: relative; 
     z-index: 0; 
@@ -395,6 +395,6 @@ h2{
     font-size: 200px;
 }
 
-footer{
+/* footer{
     
-}
+} */
