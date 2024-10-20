@@ -20,14 +20,14 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand  col col-lg-2" href="#"><div class="logo">delivo</div></a>
+          <a class="navbar-brand  col col-lg-2" href="#"><div class="logo"><img src="./PROJECT/images/Figma-images/delivo.svg"></div></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse col col-lg-9" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle pop-out" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Catalogue
                     </a>
                     <ul class="dropdown-menu">
@@ -38,10 +38,10 @@
                     </ul>
                   </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Our vendors</a>
+                <a class="nav-link active pop-out" aria-current="page" href="#">Our vendors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link pop-out" href="#">About us</a>
               </li>
               
               <li class="nav-item">
@@ -50,15 +50,15 @@
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="     Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <button class="btn btn-outline-success me-auto w-50" type="button" onclick="window.location.href='./Login/login.html'">SIGN UP</button>
+          </form>
           </div>
         </div>
       </nav>
 
     <!--Hero-->
 
-    <div class="container col-xxl-8 px-1 py-5 pl-0">
+    <div id="home" class="container col-xxl-8 px-1 py-5 pl-0 section">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
             <ig src="" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -67,8 +67,8 @@
             <h1 class="namaste ">Namaste! </h1>
             <p class="hero">What would you like to eat today?</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="button-custom1 bn btn-primary btn-lg px-4 me-md-2 rounded">Order</button>
-              <button type="button" class="button-custom2 bn btn-outline-secondary btn-lg px-4 rounded">Suggest Me!<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-alexa" viewBox="0 0 16 16" 
+              <button type="button" class="button-custom1 bn btn-primary btn-lg px-4 me-md-2 rounded pop-out">Order</button>
+              <button type="button" class="button-custom2 bn btn-outline-secondary btn-lg px-4 rounded pop-out">Suggest Me!<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-alexa" viewBox="0 0 16 16" 
                 style="transform: translateY(-3px); vertical-align: middle; margin-left: 4px">
                 <path d="M7.996 0A8 8 0 0 0 0 8a8 8 0 0 0 6.93 7.93v-1.613a1.06 1.06 0 0 0-.717-1.008A5.6 5.6 0 0 1 2.4 7.865 5.58 5.58 0 0 1 8.054 2.4a5.6 5.6 0 0 1 5.535 5.81l-.002.046-.012.192-.005.061a5 5 0 0 1-.033.284l-.01.068c-.685 4.516-6.564 7.054-6.596 7.068A7.998 7.998 0 0 0 15.992 8 8 8 0 0 0 7.996.001Z"/>
               </svg> </button>
@@ -78,7 +78,140 @@
       </div>
 
 
+<!-- 2nd part -->
+ <div id="Section2">
+<h2 class="pb-5 border-bottom my-auto p-auto box">Various Features</h2> <!-- Moved here -->
+<div class="container px-4 py-5 section" id="custom-cards">
   
+  
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 mu-5">
+      <div class="col img-mask">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./PROJECT/images/Tanay_images/Custom\ card\ 1\ ai.png');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <div class="up">
+                      <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Powered by AI</h3>
+                  </div>
+                  <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                          <img src="./PROJECT/images/Templates/Desktop - 3.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                          <small>Mumbai</small>
+                      </li>
+                      <li class="d-flex align-items-center">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                          <small>3d</small>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+    <div class="col img-mask">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./PROJECT/images/Tanay_images/card\ 2\ delivery.png');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <div class="up">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Fastest Deliveries.</h3>
+        </div>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="./PROJECT/images/Figma-images/tomato.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>Madhya Pradesh</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+              <small>4d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col img-mask">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./PROJECT/images/Tanay_images/card\ 3.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+        <div class="up">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Offers For Days!</h3>
+        </div>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="./PROJECT/images/Tanay_images/Custom card 1 ai.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>Delhi-NCR</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+              <small>5d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <!-- 3rd part -->
+
+
+  <!-- Footer -->
+  <div class="section">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <p class="text-body-secondary">© 2024</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#Section2" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#Section2" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="Trial.js"></script>
 </html>

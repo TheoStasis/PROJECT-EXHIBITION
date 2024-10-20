@@ -12,25 +12,68 @@
     color: #1eff00;
 }
 
-body{
-    background: url('./PROJECT/images/Figma-images/Desktop\ -\ 12.png') rgba(0,0,0,0.3);
+body {
+    background: url('./PROJECT/images/Figma-images/Desktop - 12.png') rgba(0, 0, 0, 0.3);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
-
+    height: 100vh;
+    overflow-y: scroll; /* Enable vertical scrolling */
 }
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #3DDC97, #FFEA00, #FF5733); /* Gradient color for thumb */
+    border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #FF5733, #FFEA00, #3DDC97); /* Change gradient on hover */
+}
+
+/* Keyframes for moving gradient effect */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Applying the gradient animation to the scrollbar */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(270deg, #3DDC97, #FFEA00, #FF5733);
+    animation: gradientAnimation 5s linear infinite; /* Apply the animation */
+}
+
+
+
 
 .hero{
     display: flex;
     font-size: 50px;
-    width: 60%;
+    width: 80%;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     color:#FFFFFF;
     text-shadow: 5px 9px 9px black;
+    text-align: left;
+    overflow: hidden;
+   
 }
 .namaste{
     font-family: "Great Vibes", cursive;
@@ -189,17 +232,169 @@ input {
         object-fit: cover;   
 }
 
-/*  */
 
-/* Override the active link color */
 .navbar-nav .nav-item .nav-link.active {
-    color: #ff5733; /* Change this to your desired color *//* Optional: change background */
+    color: #ff5733; 
 }
 
-/* Optional: Change the color on hover */
 .navbar-nav .nav-item .nav-link.active:hover {
     color: #c70039; 
 }
 
 
 
+#custom-cards h2 {
+    margin-bottom: 30px; 
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.img-mask {
+    overflow: hidden; 
+    height: 500px; 
+    overflow: visible; 
+    position: relative;
+}
+
+.card-cover {
+    background-size: cover; 
+    background-position: center; 
+    background-blend-mode: screen; 
+    position: relative; 
+}
+
+/* Create a lighter gradient overlay */
+.card-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0); /* Lighter overlay for better visibility */
+    z-index: 1; /* Position this below the text */
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    100% {
+        background-position: 100% 50%; /* End position */
+    }
+}
+
+.box {
+    background: hsl(0, 0%, 100%);
+    padding: 16px 24px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+    display: flex;
+    justify-content: center;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      top: 15px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      transform: scale(0.9) translateZ(0);
+      filter: blur(10px);
+      background: linear-gradient(
+        to left,
+        #3DDC97,
+        #FFEA00,
+        #FF5733,
+        #FFC300,
+        #A500B5,
+        #FFDD66,
+        #8D7B6D,
+        #E2CFC4,
+        #FF6F61,
+        #6AB1FF,
+        #FF4081,
+        #FFEA3C,
+        #FF7E5F,
+        #FEB47B
+      );
+      background-size: 200% 200%;
+      animation: animateGlow 7s linear infinite; /* Apply the animation */
+    }
+}
+
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative; 
+    z-index: 0; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+.row {
+    overflow: visible; 
+}
+
+.pop-out {
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.pop-out:hover {
+    transform: scale(1.09); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+.shift-down {
+    transition: transform 0.3s ease; 
+}
+
+.shift-down:hover {
+    transform: translateY(10px); 
+}
+.section {
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    opacity: 0.2; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.section.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.up{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#FFFFFF;
+    text-shadow: 5px 9px 9px black;
+    text-align: left;
+    font-size: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 2px 2px black;
+    font-size: 200px;
+}
+
+footer{
+    
+}
