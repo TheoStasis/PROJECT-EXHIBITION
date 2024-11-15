@@ -22,3 +22,18 @@ window.addEventListener('scroll', handleScroll);
 
 // Trigger scroll event once to apply effect on page load
 handleScroll();
+
+// Add this to your existing JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.querySelector('.form-control[type="search"]');
+    
+    searchInput.addEventListener('focus', function() {
+        this.nextElementSibling.style.opacity = '0';
+    });
+    
+    searchInput.addEventListener('blur', function() {
+        if (this.value === '') {
+            this.nextElementSibling.style.opacity = '1';
+        }
+    });
+});
