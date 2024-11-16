@@ -456,7 +456,7 @@ small {
 
 .section {
     min-height: 100vh;
-    padding: 60px 0; /* Consistent padding for all sections */
+    padding: 40px 0; /* Reduced from 60px */
     opacity: 0.2;
     transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -475,10 +475,11 @@ small {
 #Section2, .vendor-section {
     position: relative;
     width: 100%;
-    padding: 50px 0;
+    padding: 40px 0; /* Reduced from 50px */
     background: rgba(255, 248, 240, 0.1);
     backdrop-filter: blur(5px);
     z-index: 1;
+    margin-top: -20px; /* Added negative margin to reduce gap */
 }
 
 /* Vendor card */
@@ -648,11 +649,12 @@ small {
 
 /* Schedule Delivery Section Styles */
 .schedule-section {
-    padding: 80px 0;
+    padding: 40px 0; /* Reduced from 80px */
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     position: relative;
     min-height: 80vh;
+    margin-top: -20px; /* Added negative margin to reduce gap */
 }
 
 .delivery-card {
@@ -853,19 +855,55 @@ small {
 /* Navbar improvements */
 .navbar-brand {
     padding: 0;
+    margin-right: 2rem;
 }
 
-.navbar-brand img {
-    height: 40px; /* Adjust based on your logo */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.logo svg {
+    height: 100%;
     width: auto;
 }
 
+/* Add hover effect */
+.navbar-brand:hover .logo svg {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* For better text rendering */
+.logo svg text {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
 .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #ffffff !important;
+    padding: 8px 10px !important;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-color: #1eff00 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important;
 }
 
 .dropdown-menu {
@@ -953,4 +991,79 @@ body {
     .vendor-heading {
         font-size: 2.5rem;
     }
+}
+
+/* Adjust row spacing */
+.row.g-5 {
+    --bs-gutter-y: 2rem; /* Reduced from default 3rem */
+}
+
+/* Media query for laptop screens */
+@media (min-width: 992px) and (max-width: 1440px) {
+    .section {
+        min-height: 90vh; /* Slightly reduced height */
+    }
+    
+    #Section2, .vendor-section, .schedule-section {
+        margin-top: -40px; /* Increased negative margin for laptop screens */
+    }
+}
+
+/* Update schedule section responsive layout */
+@media (max-width: 768px) {
+    .schedule-section .row {
+        display: flex;
+        flex-direction: column-reverse; /* Reverses the order of elements */
+    }
+    
+    .delivery-card {
+        margin-top: 30px; /* Add space between text and delivery box */
+    }
+    
+    .schedule-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .schedule-subtitle {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .schedule-feature {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+.features-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.features-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #3DDC97, #FF5733);
+    border-radius: 2px;
+}
+
+/* Update Section2 padding */
+#Section2 {
+    padding-top: 60px;  /* Adjusted to accommodate the heading */
+}
+
+/* Remove the old box class if it's no longer needed */
+.box {
+    /* Remove or comment out if not needed elsewhere */
 }

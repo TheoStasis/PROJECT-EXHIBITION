@@ -23,7 +23,17 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <div class="logo">
-                    <img src="./PROJECT/images/Figma-images/delivo.svg" alt="Delivo Logo">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="30" font-family="Poppins" font-size="28" font-weight="600" fill="url(#gradient)">
+                            Delivo
+                        </text>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#3DDC97"/>
+                                <stop offset="100%" style="stop-color:#FF7043"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +56,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="./aboutus.html">About us</a>
                     </li>
                 </ul>
                 <form class="d-flex ms-auto" role="search">
@@ -83,9 +93,9 @@
 
 
 <!-- 2nd part -->
-<div id="Section2">
-    <h2 class="pb-5 border-bottom my-auto p-auto box">Various Features</h2>
-    <div class="container px-4 py-5 section" id="custom-cards">
+<div id="Section2" class="section">
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="features-heading text-center mb-5">Various Features</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 mu-5">
             <!-- Feature Card 1 -->
             <div class="col img-mask">
