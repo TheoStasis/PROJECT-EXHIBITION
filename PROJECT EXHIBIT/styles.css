@@ -207,16 +207,6 @@ body {
     }
 }
     
-.logo{
-    -webkit-text-stroke: 0.081px yellow;
-    font-family: "Pacifico", cursive;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 2rem;
-    padding-left: 20px;
-}
-
-
 
 
 /* Search input styling */
@@ -862,25 +852,16 @@ small {
     display: flex;
     align-items: center;
     height: 40px;
+    font-family: "Lily Script One", system-ui; 
 }
 
-.logo svg {
-    height: 100%;
-    width: auto;
-}
+
 
 /* Add hover effect */
-.navbar-brand:hover .logo svg {
-    filter: brightness(1.2);
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
+
 
 /* For better text rendering */
-.logo svg text {
-    text-rendering: geometricPrecision;
-    -webkit-font-smoothing: antialiased;
-}
+
 
 .navbar-toggler {
     border: 2px solid #ffffff !important;
@@ -954,6 +935,7 @@ body {
     margin-bottom: 50px;
     background: linear-gradient(45deg, #3DDC97, #FF5733);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
     animation: gradientText 5s ease infinite;
@@ -1064,6 +1046,4 @@ body {
 }
 
 /* Remove the old box class if it's no longer needed */
-.box {
-    /* Remove or comment out if not needed elsewhere */
-}
+
