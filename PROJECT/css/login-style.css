@@ -505,5 +505,50 @@ hr{
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .login-section {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding: 1rem; /* Add some padding */
+    }
+
+    .sub-login {
+        width: 90%; /* Make the login form take up more width */
+    }
+
+    .sign-up {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .ph-no, .password {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .sign-up-btn {
+        height: auto; /* Adjust button height */
+        padding: 1rem; /* Add padding */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5vw; /* Reduce margin for smaller screens */
+    }
+
+    .profile-pic {
+        width: 30px; /* Reduce profile picture size */
+        height: 30px; /* Reduce profile picture size */
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-up {
+        font-size: 1.2rem; /* Further reduce font size for very small screens */
+    }
+
+    .navbar .nav-link {
+        padding: 0.3rem; /* Adjust padding for smaller screens */
+    }
+}
+
 
 
