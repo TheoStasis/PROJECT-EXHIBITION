@@ -123,6 +123,19 @@ color: #c70039;
     color: rgba(255, 255, 255, 0.5);
 }
 
+.navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-family: "Lily Script One", system-ui; 
+}
+
+
 
 
 body {
@@ -959,17 +972,6 @@ small {
 }
 
 /* Navbar improvements */
-.navbar-brand {
-    padding: 0;
-    margin-right: 2rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    font-family: "Lily Script One", system-ui; 
-}
 
 
 

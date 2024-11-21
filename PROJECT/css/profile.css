@@ -117,6 +117,18 @@ color: #c70039;
 .form-control:focus + .search-icon {
     opacity: 0;
 }
+.navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-family: "Lily Script One", system-ui; 
+}
+
 .navbar-toggler {
     border: 2px solid #ffffff !important;
     padding: 8px 10px !important;
