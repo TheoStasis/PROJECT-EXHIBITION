@@ -483,20 +483,20 @@ hr{
 }
 
 .fd-1 {
-    background-image: url("Food-items/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
+    background-image: url("./images/food-items/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
 }
 .fd-2 {
-    background-image: url("Food-items/chad-montano-MqT0asuoIcU-unsplash.jpg");
+    background-image: url("./images/food-items/chad-montano-MqT0asuoIcU-unsplash.jpg");
     
 }
 .fd-3 {
-    background-image: url("Food-items/jason-leung-AUAuEgUxg5Q-unsplash.jpg");
+    background-image: url("./images/food-items/jason-leung-AUAuEgUxg5Q-unsplash.jpg");
 }
 .fd-4 {
-    background-image: url("Food-items/mgg-vitchakorn-IiZ2Gqxm5Pg-unsplash.jpg");
+    background-image: url("./images/food-items/mgg-vitchakorn-IiZ2Gqxm5Pg-unsplash.jpg");
 }
 .fd-5 {
-    background-image: url("Food-items/yubraj-timsina-eI_Uk6uGCOQ-unsplash.jpg");
+    background-image: url("./images/food-items/yubraj-timsina-eI_Uk6uGCOQ-unsplash.jpg");
 }
 
 .fd-1, .fd-2, .fd-3, .fd-4, .fd-5 {
