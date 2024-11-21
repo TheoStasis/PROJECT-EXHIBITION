@@ -1,9 +1,8 @@
 .custom-navbar {
-    background-color: rgba(30, 29, 29, 0.643); 
+    background-color: rgba(0, 0, 0, 0.8); 
     backdrop-filter: blur(5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 50px rgba(101, 156, 6, 0.3); 
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid rgb(60, 59, 59);
 }
 
 .navbar .nav-link {
@@ -26,6 +25,7 @@ body {
     overflow-y: scroll; /* Enable vertical scrolling */
     min-height: 100vh;
     overflow-y: auto;
+    font-family: "Raleway", sans-serif;
 }
 
 /* Custom scrollbar styles */
@@ -72,7 +72,7 @@ body {
     display: flex;
     font-size: 50px;
     width: 80%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-style: normal;
     color:#FFFFFF;
@@ -215,21 +215,20 @@ body {
     align-items: center;
 }
 
-.fa-magnifying-glass {
+.search-icon {
     position: absolute;
-    left: 12px;
+    left: 10px;
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
 
 .form-control {
-    background-color: rgba(128, 128, 128, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    color: white !important;
-    padding-left: 35px !important; /* Make room for the icon */
-    border-radius: 20px !important;
-    transition: all 0.3s ease !important;
+    background-color: rgba(128, 128, 128, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding-left: 35px; /* Make room for the icon */
+    transition: all 0.3s ease;
 }
 
 .form-control::placeholder {
@@ -643,7 +642,7 @@ small {
 /* Schedule Delivery Section Styles */
 .schedule-section {
     padding: 40px 0; /* Reduced from 80px */
-    background: rgba(255, 255, 255, 0.1);
+    background: url('./images/misc/ai_gradeint[1].png') no-repeat center center;
     backdrop-filter: blur(10px);
     position: relative;
     min-height: 80vh;
@@ -653,6 +652,7 @@ small {
 .delivery-card {
     background: white;
     padding: 40px;
+    width: 70%;
     border-radius: 25px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -660,11 +660,12 @@ small {
 }
 
 .delivery-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #000;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 40px;
 }
 
 .delivery-options {
@@ -674,6 +675,7 @@ small {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-bottom: 50px;
 }
 
 .delivery-btn {
@@ -694,7 +696,7 @@ small {
 
 /* Right side content */
 .schedule-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 4rem;
     font-weight: 800;
     color: #000;
@@ -703,7 +705,7 @@ small {
 }
 
 .schedule-subtitle {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     color: #666;
     margin-bottom: 15px;
@@ -711,7 +713,7 @@ small {
 }
 
 .schedule-feature {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.3rem;
     color: #666;
 }
@@ -732,9 +734,22 @@ small {
     filter: blur(80px);
 }
 
+/* Center alignment container */
+.schedule-section .container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.schedule-section .row {
+    width: 100%;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .delivery-card {
         margin-bottom: 40px;
+        width: 100%;
     }
     
     .schedule-title {
@@ -747,6 +762,11 @@ small {
     
     .schedule-feature {
         font-size: 1.1rem;
+    }
+    
+    .schedule-section .container {
+        height: auto;
+        padding: 60px 0;
     }
 }
 
@@ -766,7 +786,7 @@ small {
 }
 
 .section-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
     color: #000;
@@ -797,7 +817,7 @@ small {
 }
 
 .feature-content h3 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #000;
@@ -931,7 +951,7 @@ body {
 
 /* Vendor Section Heading */
 .vendor-heading {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
@@ -1022,7 +1042,7 @@ body {
 }
 
 .features-heading {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
     color: #fff;
@@ -1049,4 +1069,301 @@ body {
 }
 
 /* Remove the old box class if it's no longer needed */
+
+/* AI Suggestion Section */
+.ai-suggestion-section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    padding: 80px 0;
+    overflow: hidden;
+    background: url('./images/misc/ai_gradeint[1].png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Remove or comment out the previous ::before gradient if you're using the image */
+/* .ai-suggestion-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, 
+        rgba(0, 255, 128, 0.2),
+        rgba(255, 192, 203, 0.2)
+    );
+    z-index: -1;
+    filter: blur(80px);
+} */
+
+.ai-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        to right,
+        #B8FFC8 0%,    /* Light mint green */
+        #F9B4FF 23%,   /* Light pink */
+        #72FAFF 47%,   /* Light cyan */
+        #F3FFA6 71%,   /* Light yellow */
+        #EEA9FF 100%   /* Light purple */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* Ensures gradient applies correctly */
+}
+
+.suggest-btn {
+    font-family: "Raleway", sans-serif;
+    background: #fff384;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.suggest-btn:hover {
+    background: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.suggest-btn i {
+    font-size: 1.4rem;
+}
+
+.chat-preview {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chat-bubble {
+    max-width: 80%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+.chat-bubble.user {
+    background: #fff384;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+    font-weight: 700;
+}
+
+.chat-bubble.ai {
+    background: #cac7c7;
+    margin-right: auto;
+    border-bottom-left-radius: 5px;
+    font-weight: 600;
+}
+
+.suggestion-image {
+    width: 300px; /* Fixed width */
+    height: 200px; /* Same as width to make it square */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block; /* Ensures proper alignment */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ai-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .suggest-btn {
+        margin: 0 auto;
+        display: inline-flex;
+    }
+    
+    .chat-preview {
+        margin-top: 40px;
+    }
+    
+    .suggestion-image {
+        width: 150px; /* Smaller on mobile */
+        height: 150px;
+    }
+}
+
+/* AI Suggestion Section spacing adjustments */
+.ai-suggestion-section {
+    margin-bottom: -20px; /* Creates seamless transition to features section */
+    z-index: 1;
+}
+
+/* Update Section2 (Features section) spacing */
+#Section2 {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+/* First section height adjustment */
+.hero-section {  /* Add this class to your first section */
+    min-height: 100vh;
+    padding-bottom: 100px; /* Add extra padding at bottom */
+    position: relative;
+    z-index: 1;
+    margin-bottom: -40px; /* Negative margin to pull next section up */
+}
+
+/* AI Suggestion Section adjustments */
+.ai-suggstion-section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    padding: 80px 0;
+    overflow: hidden;
+    background: url('../images/gradient-bg.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Media query for laptop screens */
+@media (min-width: 992px) and (max-width: 1440px) {
+    .hero-section {
+        min-height: 100vh;
+        padding-bottom: 80px;
+    }
+    
+    .ai-suggestion-section {
+        min-height: 100vh;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 100vh;
+        padding-bottom: 60px;
+    }
+}
+
+/* First section height adjustment */
+.hero-section {
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -40px;
+}
+
+/* AI Suggestion Section */
+.ai-suggstion-section {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    padding: 80px 0;
+    overflow: hidden;
+    background: url('../images/gradient-bg.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Various Features Section */
+#Section2 {
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+    margin-top: -40px;
+    padding: 60px 0;
+}
+
+/* Vendor Section */
+.vendor-section {
+    min-height: 100vh;
+    position: relative;
+    padding: 60px 0;
+    margin-top: -40px;
+    z-index: 3;
+}
+
+/* Schedule Delivery Section */
+.schedule-section {
+    min-height: 100vh;
+    position: relative;
+    padding: 40px 0;
+    margin-top: -40px;
+    z-index: 4;
+}
+
+/* Center content in all sections */
+.section {
+    display: flex;
+    align-items: center;
+}
+
+.section .container {
+    width: 100%;
+}
+
+/* Media queries for better responsive behavior */
+@media (min-width: 992px) and (max-width: 1440px) {
+    .hero-section,
+    .ai-suggestion-section,
+    #Section2,
+    .vendor-section,
+    .schedule-section {
+        min-height: 100vh;
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section,
+    .ai-suggestion-section,
+    #Section2,
+    .vendor-section,
+    .schedule-section {
+        min-height: 100vh;
+        padding: 40px 0;
+    }
+    
+    .section {
+        align-items: flex-start; /* Better mobile layout */
+    }
+}
+
+/* Ensure smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section transitions */
+.section {
+    opacity: 0.2;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
