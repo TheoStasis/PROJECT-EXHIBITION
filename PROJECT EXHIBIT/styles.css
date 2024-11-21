@@ -81,8 +81,8 @@ body {
    
 }
 .namaste{
-    font-family: "Great Vibes", cursive;
-    font-weight: 570;
+    font-family: "Licorice", cursive;
+    font-weight: 600;
     font-style: normal;
     font-size:120px;
     color:#FFFFFF;
@@ -152,7 +152,7 @@ body {
 
 
         /* btn-primary */
-.button-custom2 {
+.suggest_btn {
         color: #000000;
         background-color: #ddda7a;
         border-color: #FFF700;
@@ -166,22 +166,20 @@ body {
         border: 1px solid transparent;
         padding: 0.375rem 0.75rem;
         font-size: 1rem;
+        border-radius: 5rem;
         line-height: 1.5;
-        border-radius: 0.375rem;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     
         /* Hover state for btn-primary */
         &:hover {
-            color: #fff;
-            background-color: #2a9c00;
-            border-color: #0a58ca;
+            color: #272727;
+            background-color: #FFF700;
         }
     
         /* Focus state for btn-primary */
         &:focus {
-            color: #fff;
-            background-color: #0b5ed7;
-            border-color: #0a58ca;
+            color: #1f1f1f;
+            background-color: #f5f5b9;
             box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
         }
     
@@ -200,7 +198,7 @@ body {
     
     
     @media (min-width: 768px) {
-        .button-custom2 {
+        .suggest_btn {
             margin-right: 0.5rem; /* Equivalent to me-md-2 */
             margin-left: 1.5rem;
         }
@@ -265,8 +263,11 @@ input {
 }
 
 
-.navbar-nav .nav-item .nav-link.active {
-    color: #ff5733; 
+.navbar-nav .nav-item {
+    margin: 0 1vw 0 1vw;
+    color: #ff5733;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
 }
 
 .navbar-nav .nav-item .nav-link.active:hover {
