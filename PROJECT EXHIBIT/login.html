@@ -14,43 +14,34 @@
 <body>
   <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand col col-lg-2" href="./home-page.html">
-        <div class="logo"><img src="./css/images/figma/delivo.svg" class="logo-img"></div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse col col-lg-9" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle pop-out" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Catalogue
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="about-us.html">About us</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-          <li class="nav-item">
-            <a class="nav-link active pop-out" aria-current="page" href="#">Our vendors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pop-out" href="about-us.html">About us</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true"></a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="     Search" aria-label="Search">
-          <a href="login.html" class="btn btn-outline-success me-auto w-50" role="button">SIGN UP</a>
-      </form>
-      </div>
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                    <img class="logo" src="./css/images/figma/delivo.svg">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Catalogue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about-us.html">About us</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto" role="search">
+                <div class="search-container">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #f7f7f7;"></i>
+                </div>
+                
+                <button class="btn btn-outline-success" type="button" onclick="window.location.href='\login.html'">SIGN UP</button>
+            </form>
+        </div>
     </div>
-  </nav>
+</nav>
 
 
   <!-- Login UI -->
@@ -63,7 +54,7 @@
                     <input type="number" placeholder="Phone No." class="ph-no" name="phone">
                     <input type="password" placeholder="Password" class="password" name="password" id="password">
                     <div class="d-grid">
-                        <a href="home-page.html" class="btn btn-dark sign-up-btn" style="text-align: center; padding-top: 25px;">Sign Up</a>
+                        <a href="home-page.html" class="btn btn-dark sign-up-btn" style="text-align: center;">Sign Up</a>
                     </div>    
                 </div>
             </div>

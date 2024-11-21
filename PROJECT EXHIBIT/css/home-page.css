@@ -1,8 +1,9 @@
 .custom-navbar {
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(30, 29, 29, 0.643); 
     backdrop-filter: blur(5px); 
-    box-shadow: 0 10px 50px rgba(101, 156, 6, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgb(60, 59, 59);
 }
 
 .navbar .nav-link {
@@ -214,20 +215,21 @@ body {
     align-items: center;
 }
 
-.search-icon {
+.fa-magnifying-glass {
     position: absolute;
-    left: 10px;
+    left: 12px;
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
 
 .form-control {
-    background-color: rgba(128, 128, 128, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
-    padding-left: 35px; /* Make room for the icon */
-    transition: all 0.3s ease;
+    background-color: rgba(128, 128, 128, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    padding-left: 35px !important; /* Make room for the icon */
+    border-radius: 20px !important;
+    transition: all 0.3s ease !important;
 }
 
 .form-control::placeholder {
