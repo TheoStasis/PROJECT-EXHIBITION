@@ -272,8 +272,30 @@
                     <div class="delivery-card">
                         <h2 class="delivery-title">Delivery Time:</h2>
                         <div class="delivery-options">
-                            <button class="delivery-btn">Deliver Now</button>
-                            <button class="delivery-btn">Choose a time</button>
+                            <button class="delivery-btn active" id="deliverNowBtn">Deliver Now</button>
+                            <button class="delivery-btn" id="scheduleBtn">Schedule Later</button>
+                        </div>
+                        
+                        <div class="delivery-info" id="deliveryInfo">
+                            <div class="estimated-time">
+                                <p>Estimated Delivery Time:</p>
+                                <h3 id="estimatedTime">Calculating...</h3>
+                            </div>
+                            
+                            <div class="schedule-picker" id="schedulePicker" style="display: none;">
+                                <input type="datetime-local" id="scheduleDateTime" class="form-control">
+                                <button class="confirm-schedule-btn" id="confirmSchedule">Confirm Schedule</button>
+                            </div>
+                            
+                            <div class="location-info">
+                                <p>Delivering to:</p>
+                                <select id="locationSelect" class="form-control">
+                                    <option value="default">Select Location</option>
+                                    <option value="location1">Mumbai Central</option>
+                                    <option value="location2">Andheri West</option>
+                                    <option value="location3">Bandra</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,6 +308,8 @@
         </div>
     </div>
 </body>
+<!-- Add this before closing body tag -->
+<script src="scripts/delivery-time.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="scripts/home-page.js"></script>
 </html>
