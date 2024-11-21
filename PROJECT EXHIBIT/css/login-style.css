@@ -347,6 +347,12 @@ font-weight: 600;
 .navbar-nav .nav-item .nav-link.active:hover {
 color: #c70039; 
 }
+.logo {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-family: "Lily Script One", system-ui; 
+}
 
 .cont {
     min-height: 90vh;
