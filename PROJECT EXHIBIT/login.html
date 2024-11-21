@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | Delivo</title>
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="./css/login-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,9 @@
 <body>
   <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand  col col-lg-2" href="#"><div class="logo"><img src="delivo.svg" class="logo-img"></div></a>
+      <a class="navbar-brand col col-lg-2" href="./home-page.html">
+        <div class="logo"><img src="./css/images/figma/delivo.svg" class="logo-img"></div>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,7 +27,7 @@
                   Catalogue
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">About us</a></li>
+                  <li><a class="dropdown-item" href="about-us.html">About us</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -35,7 +37,7 @@
             <a class="nav-link active pop-out" aria-current="page" href="#">Our vendors</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pop-out" href="#">About us</a>
+            <a class="nav-link pop-out" href="about-us.html">About us</a>
           </li>
           
           <li class="nav-item">
@@ -44,7 +46,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="     Search" aria-label="Search">
-          <button class="btn btn-outline-success me-auto w-50" type="button" onclick="window.location.href='./Login/login.html'">SIGN UP</button>
+          <a href="login.html" class="btn btn-outline-success me-auto w-50" role="button">SIGN UP</a>
       </form>
       </div>
     </div>
@@ -61,7 +63,7 @@
                     <input type="number" placeholder="Phone No." class="ph-no" name="phone">
                     <input type="password" placeholder="Password" class="password" name="password" id="password">
                     <div class="d-grid">
-                        <button type="button" class="btn btn-dark sign-up-btn">Sign Up</button>
+                        <a href="home-page.html" class="btn btn-dark sign-up-btn" style="text-align: center; padding-top: 25px;">Sign Up</a>
                     </div>    
                 </div>
             </div>
