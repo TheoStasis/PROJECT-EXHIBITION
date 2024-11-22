@@ -59,7 +59,22 @@ for (let i = 0; i < 30; i++) {
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">${foodItems[i].name}</h5>
             <p class="card-text">${foodItems[i].price}</p>
-            <button class="btn mt-auto align-self-end" style="background-color: rgba(255, 0, 0, 0.7); color: white;">
+            <div class="product-quantity-container">
+                <select class = "js-quantity-selector-${i}">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+            </div>
+            <button class="btn mt-auto align-self-end js-add-to-cart" style="background-color: rgba(255, 0, 0, 0.7); color: white;"
+                data-id="${i}" data-name="${foodItems[i].name}" data-price="${foodItems[i].price}">
                 <i class="bi bi-cart-plus-fill"></i>
             </button>
         </div>
@@ -123,3 +138,32 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+    button.addEventListener('click', () => {
+        // Get the quantity from the corresponding selector
+        const quantitySelector = document.querySelector(`.js-quantity-selector-${button.dataset.id}`);
+        
+        // Check if the quantitySelector exists
+        if (quantitySelector) {
+            const quantity = parseInt(quantitySelector.value, 10); // Get the selected quantity as an integer
+
+            // Loop through the quantity and add the item to the cart
+            for (let i = 0; i < quantity; i++) {
+                let foodItem = {
+                    id: button.dataset.id,
+                    name: button.dataset.name,
+                    price: button.dataset.price,
+                    // You can also add a unique identifier if needed
+                };
+
+                // Add the item to the cart
+                cart.push(foodItem);
+            }
+
+            console.log(cart);
+        } else {
+            console.error('Quantity selector not found for button with ID:', button.dataset.id);
+        }
+    });
+});
