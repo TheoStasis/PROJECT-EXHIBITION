@@ -161,6 +161,9 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
                 cart.push(foodItem);
             }
 
+            // Update the cart quantity display
+            document.querySelector('.js-cart-quantity-number').innerHTML = cart.length; // Update the displayed quantity
+
             console.log(cart);
         } else {
             console.error('Quantity selector not found for button with ID:', button.dataset.id);
