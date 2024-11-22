@@ -29,7 +29,7 @@
                         <a class="nav-link" aria-current="page" href="catalogue.html">Catalogue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about-us.html">About us</a>
+                        <a class="nav-link" href="about-us.html">About us</a>
                     </li>
                 </ul>
                 <form class="d-flex ms-auto" role="search">
@@ -46,9 +46,7 @@
                             </span>
                         </button>
                     </div>
-                    <a href="profile.html" class="user-pfp">
-                        <img src="css/images/figma/user-pfp.jpg" style="border-radius: 50%; width: 3vw;">
-                    </a>
+
                 </form>
             </div>
         </div>
@@ -67,10 +65,11 @@
                 <p class="hero">What would you like to eat today?</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                   <button onclick="window.location.replace('catalogue.html')" type="button" class="button-custom1 bn btn-primary btn-lg px-4 me-md-2 rounded pop-out">Order</button>
-                  <button type="button" class="button-custom2 bn btn-outline-secondary btn-lg px-4 rounded pop-out">Suggest Me!<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-alexa" viewBox="0 0 16 16" 
+                  <!-- <button type="button" class="button-custom2 bn btn-outline-secondary btn-lg px-4 rounded pop-out">Suggest Me!<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-alexa" viewBox="0 0 16 16" 
                     style="transform: translateY(-3px); vertical-align: middle; margin-left: 4px">
                     <path d="M7.996 0A8 8 0 0 0 0 8a8 8 0 0 0 6.93 7.93v-1.613a1.06 1.06 0 0 0-.717-1.008A5.6 5.6 0 0 1 2.4 7.865 5.58 5.58 0 0 1 8.054 2.4a5.6 5.6 0 0 1 5.535 5.81l-.002.046-.012.192-.005.061a5 5 0 0 1-.033.284l-.01.068c-.685 4.516-6.564 7.054-6.596 7.068A7.998 7.998 0 0 0 15.992 8 8 8 0 0 0 7.996.001Z"/>
-                  </svg> </button>
+                    </svg> 
+                  </button> -->
                 </div>
               </div>
             </div>
@@ -83,9 +82,9 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h1 class="ai-title">Get AI<br> powered suggestions,<br>tailored to <span class="gradient-text">you!</span></h1>
-                    <button class="suggest-btn pop-out">
+                    <!-- <button class="suggest-btn pop-out">
                         Suggest Me! <i class="bi bi-robot"></i>
-                    </button>
+                    </button> -->
                 </div>
                 <div class="col-md-6">
                     <div class="chat-preview">
@@ -268,7 +267,7 @@
 
             <!-- View More Button -->
             <div class="text-center mt-5">
-                <button class="btn btn-lg btn-outline-light view-more-btn pop-out">
+                <button class="btn btn-lg btn-outline-light view-more-btn pop-out" onclick="window.location.replace('catalogue.html')">
                     View More Vendors <i class="bi bi-arrow-right"></i>
                 </button>
             </div>
