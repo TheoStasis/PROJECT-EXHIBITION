@@ -76,12 +76,20 @@
                             <span class="queries">Tax (5%):</span>
                             <span id="tax">₹0.00</span>
                         </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="queries">Discount:</span>
+                            <span id="discount">₹0.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="queries">Shipping Charges:</span>
+                            <span id="shipping">₹0.00</span>
+                        </div>
                         <hr>
                         <div class="d-flex justify-content-between mb-3">
-                            <strong>Total:</strong>
+                            <strong class="total">Total:</strong>
                             <strong id="total">₹0.00</strong>
                         </div>
-                        <button class="btn btn-success w-100" onclick="proceedToBuy()">Proceed to Buy</button>
+                        <button class="btn btn-success w-100 buy-btn" onclick="proceedToBuy()">Proceed to Buy</button>
                     </div>
                 </div>
             </div>
@@ -108,6 +116,7 @@
                 </div>
             </div>
         </div>
+    </template>
     </template>
 
     <script>
@@ -150,10 +159,14 @@
         function updateOrderSummary() {
             const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
             const tax = subtotal * 0.05;
-            const total = subtotal + tax;
+            const discount = subtotal * 0.02;
+            const shipping = 40;
+            const total = subtotal + tax - discount + shipping;
 
             document.getElementById('subtotal').textContent = `₹${subtotal.toFixed(2)}`;
             document.getElementById('tax').textContent = `₹${tax.toFixed(2)}`;
+            document.getElementById('discount').textContent = `₹${discount.toFixed(2)}`;
+            document.getElementById('shipping').textContent = `₹${shipping.toFixed(2)}`;
             document.getElementById('total').textContent = `₹${total.toFixed(2)}`;
         }
 
