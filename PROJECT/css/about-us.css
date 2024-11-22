@@ -276,9 +276,9 @@ body {
     align-items: center;
 }
 
-.fa-magnifying-glass {
+.search-icon {
     position: absolute;
-    left: 12px;
+    right: 210px; /* Position to the right of the search text */
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: opacity 0.3s ease;
