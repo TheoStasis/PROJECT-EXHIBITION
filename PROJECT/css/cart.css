@@ -166,3 +166,23 @@
 .form-control:focus + .search-icon {
     opacity: 0;
 }
+
+
+
+.page-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+
+.invoice {
+    background-color:rgb(216, 215, 215);
+    font-family: "Raleway", sans-serif;
+}
+.card-title {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+.queries {
+    font-weight: 800;
+}

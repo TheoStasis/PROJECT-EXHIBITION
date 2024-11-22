@@ -56,23 +56,24 @@
     </nav>
 
     <div class="container mt-5">
-        <h1 class="mb-4">Your Cart</h1>
         <div class="row">
             <div class="col-md-8">
-                <div id="cart-items" class="row g-4">
+                <h1 class="mb-4 page-title">Checkout</h1>
+                <div class="border-top border-5 border-secondary rounded-pill mb-4"></div>
+                <div id="cart-items">
                     <!-- Cart items will be dynamically added here -->
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Order Summary</h5>
+                <div class="card ">
+                    <div class="card-body invoice">
+                        <h5 class="card-title">INVOICE</h5>
                         <div class="d-flex justify-content-between mb-3">
-                            <span>Subtotal:</span>
+                            <span class="queries">Subtotal:</span>
                             <span id="subtotal">₹0.00</span>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                            <span>Tax (5%):</span>
+                            <span class="queries">Tax (5%):</span>
                             <span id="tax">₹0.00</span>
                         </div>
                         <hr>
@@ -87,47 +88,67 @@
         </div>
     </div>
 
-    <script src="scripts/cart.js"></script>
+    <template id="cart-item-template">
+        <div class="card mb-3">
+            <div class="card-body d-flex align-items-start">
+                <span class="me-3 fs-4 item-number"></span>
+                <img src="" alt="Food Item" class="me-3 item-image" style="width: 100px; height: 100px; object-fit: cover;">
+                <div class="flex-grow-1">
+                    <h5 class="card-title item-name"></h5>
+                    <div class="input-group" style="width: 120px;">
+                        <button class="btn btn-outline-secondary decrease-qty" type="button">-</button>
+                        <input type="text" class="form-control text-center item-quantity" value="1" readonly>
+                        <button class="btn btn-danger increase-qty" type="button" style="font-weight: bold; color: white;">+</button>
+                    </div>
+                </div>
+                <div class="text-end mt-auto">
+                    <p class="mb-0 item-original-price"></p>
+                    <p class="mb-0 item-quantity-display"></p>
+                    <p class="fw-bold item-total-price"></p>
+                </div>
+            </div>
+        </div>
+    </template>
+
     <script>
-        // Load cart items when page loads
-        window.onload = function() {
-            displayCartItems();
-            updateCartCount();
-        };
+        let cart = [
+            { id: 1, name: "Pizza", price: 200, quantity: 1, image: "path/to/pizza.jpg" },
+            { id: 2, name: "Burger", price: 150, quantity: 1, image: "path/to/burger.jpg" }
+        ];
 
         function displayCartItems() {
             const cartContainer = document.getElementById('cart-items');
-            cartContainer.innerHTML = ''; // Clear existing items
-            
-            let subtotal = 0;
+            const template = document.getElementById('cart-item-template');
+            cartContainer.innerHTML = '';
 
             cart.forEach((item, index) => {
-                const itemPrice = parseFloat(item.price.replace('₹', ''));
-                subtotal += itemPrice * item.quantity;
+                const clone = template.content.cloneNode(true);
+                clone.querySelector('.item-number').textContent = index + 1;
+                clone.querySelector('.item-image').src = item.image;
+                clone.querySelector('.item-name').textContent = item.name;
+                clone.querySelector('.item-quantity').value = item.quantity;
+                clone.querySelector('.item-original-price').textContent = `₹${item.price.toFixed(2)}`;
+                clone.querySelector('.item-quantity-display').textContent = `x${item.quantity}`;
+                clone.querySelector('.item-total-price').textContent = `₹${(item.price * item.quantity).toFixed(2)}`;
 
-                const itemElement = document.createElement('div');
-                itemElement.className = 'col-md-6 mb-4';
-                itemElement.innerHTML = `
-                    <div class="card h-100">
-                        <img src="${item.image}" class="card-img-top" alt="${item.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${item.name}</h5>
-                            <p class="card-text">Price: ${item.price}</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="input-group" style="width: 120px;">
-                                    <button class="btn btn-outline-secondary" onclick="updateQuantity(${index}, -1)">-</button>
-                                    <input type="text" class="form-control text-center" value="${item.quantity}" readonly>
-                                    <button class="btn btn-outline-secondary" onclick="updateQuantity(${index}, 1)">+</button>
-                                </div>
-                                <button class="btn btn-danger" onclick="removeItem(${index})">Remove</button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                cartContainer.appendChild(itemElement);
+                clone.querySelector('.decrease-qty').addEventListener('click', () => updateQuantity(index, -1));
+                clone.querySelector('.increase-qty').addEventListener('click', () => updateQuantity(index, 1));
+
+                cartContainer.appendChild(clone);
             });
 
-            // Update summary
+            updateOrderSummary();
+        }
+
+        function updateQuantity(index, change) {
+            if (cart[index].quantity + change > 0) {
+                cart[index].quantity += change;
+                displayCartItems();
+            }
+        }
+
+        function updateOrderSummary() {
+            const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
             const tax = subtotal * 0.05;
             const total = subtotal + tax;
 
@@ -136,32 +157,17 @@
             document.getElementById('total').textContent = `₹${total.toFixed(2)}`;
         }
 
-        function updateQuantity(index, change) {
-            if (cart[index].quantity + change > 0) {
-                cart[index].quantity += change;
-                displayCartItems();
-                updateCartCount();
-            }
-        }
-
-        function removeItem(index) {
-            cart.splice(index, 1);
-            displayCartItems();
-            updateCartCount();
-        }
-
         function proceedToBuy() {
             alert('Thank you for your purchase!');
             cart = [];
             displayCartItems();
-            updateCartCount();
         }
 
-        function updateCartCount() {
-            const cartCount = document.querySelector('.cart-count');
-            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-            cartCount.textContent = totalItems;
-        }
+        // Initial display
+        displayCartItems();
     </script>
+
+    <script src="scripts/cart.js"></script>
+    
 </body>
 </html>

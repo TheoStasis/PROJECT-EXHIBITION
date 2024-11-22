@@ -183,23 +183,7 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-/* Custom scrollbar styles */
-::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-}
 
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1); /* Track color */
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #3DDC97, #FFEA00, #FF5733); /* Gradient color for thumb */
-    border-radius: 10px; /* Rounded edges */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to right, #FF5733, #FFEA00, #3DDC97); /* Change gradient on hover */
-}
 
 /* Keyframes for moving gradient effect */
 @keyframes gradientAnimation {
