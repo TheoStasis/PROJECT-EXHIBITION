@@ -1,35 +1,35 @@
 // Food items data with unique names
 const foodItems = [
-    { name: "Aloo Mutter Samosa", price: "₹149", image: "./css/images/food-items/Mayuri/aloo mutter samosa.png" },
-    { name: "Aloo Tikki", price: "₹299", image: "./css/images/food-items/Mayuri/ALOO TIKKI.png" },
-    { name: "Dahi bhalle", price: "₹199", image: "./css/images/food-items/Mayuri/dahi bhalla.png" },
-    { name: "Dahi Puri", price: "₹129", image: "./css/images/food-items/Mayuri/dahi puri.png" },
-    { name: "Indori Hot Dog", price: "₹179", image: "./css/images/food-items/Mayuri/indori hot dog.png" },
-    { name: "Loaded Sandwhich", price: "₹249", image: "./css/images/food-items/Mayuri/LOADED SANDWITCH.jpg" },
-    { name: "Masala Dosa", price: "₹219", image: "./css/images/food-items/Mayuri/masala dosa.jpg" },
-    { name: "Masala Paneer Samosa", price: "₹159", image: "./css/images/food-items/Mayuri/masala paneer samosa.png" },
-    { name: "Paneer Fried Momo", price: "₹189", image: "./css/images/food-items/Mayuri/paneer fried momo.jpg" },
-    { name: "Paneer Hotdog", price: "₹229", image: "./css/images/food-items/Mayuri/paneer hotdog.jpg" },
-    { name: "Paneer Steam Momo", price: "₹329", image: "./css/images/food-items/Mayuri/paneer steam momo.jpg" },
-    { name: "Paneer Tikka", price: "₹259", image: "./css/images/food-items/Mayuri/paneer tikka.png" },
-    { name: "Pani Puri", price: "₹169", image: "./css/images/food-items/Mayuri/pani puri.png" },
-    { name: "Papdi Chat", price: "₹289", image: "./css/images/food-items/Mayuri/papdi chat.png" },
-    { name: "Pav Bhaji", price: "₹199", image: "./css/images/food-items/Mayuri/pav bhaji.png" },
-    { name: "Raj Kachori", price: "₹279", image: "./css/images/food-items/Mayuri/raj kachori.png" },
-    { name: "Shahi Kachori", price: "₹239", image: "./css/images/food-items/Mayuri/shahi kachori.png" },
-    { name: "Vada Pav", price: "₹209", image: "./css/images/food-items/Mayuri/vada pav.png" },
-    { name: "Vada Smbhar", price: "₹179", image: "./css/images/food-items/Mayuri/vada sambhar.png" },
-    { name: "Veg Burger", price: "₹199", image: "./css/images/food-items/Mayuri/veg burger.jpg" },
-    { name: "Veg Cheese Burger", price: "₹229", image: "./css/images/food-items/Mayuri/veg cheese burger.jpg" },
-    { name: "Veg Fried Momo", price: "₹199", image: "./css/images/food-items/Mayuri/veg fried momo.jpg" },
-    { name: "Veg Steam Momo", price: "₹169", image: "./css/images/food-items/Mayuri/veg steam momo.jpg" },
-    { name: "Blueberry Soda", price: "₹269", image: "./css/images/food-items/Mayuri/blue berry soda.jpg" },
-    { name: "Cold Coffee", price: "₹189", image: "./css/images/food-items/Mayuri/cold coffee.jpg" },
-    { name: "Green Apple Soda", price: "₹249", image: "./css/images/food-items/Mayuri/green apple soda.jpg" },
-    { name: "Mint Mojito", price: "₹179", image: "./css/images/food-items/Mayuri/mint mojito.jpg" },
-    { name: "Kiwi Punch", price: "₹219", image: "./css/images/food-items/Mayuri/kiwi punch.jpg" },
-    { name: "Pineapple Soda", price: "₹239", image: "./css/images/food-items/Mayuri/pineapple juice.jpg" },
-    { name: "Idli Sambhar", price: "₹349", image: "./css/images/food-items/Mayuri" }
+    { name: "Aloo Mutter Samosa", price: "₹149", image: "./css/images/food-items/Mayuri/aloo mutter samosa.png", quantity: 0 },
+    { name: "Aloo Tikki", price: "₹299", image: "./css/images/food-items/Mayuri/ALOO TIKKI.png", quantity: 0 },
+    { name: "Dahi bhalle", price: "₹199", image: "./css/images/food-items/Mayuri/dahi bhalla.png", quantity: 0 },
+    { name: "Dahi Puri", price: "₹129", image: "./css/images/food-items/Mayuri/dahi puri.png", quantity: 0 },
+    { name: "Indori Hot Dog", price: "₹179", image: "./css/images/food-items/Mayuri/indori hot dog.png", quantity: 0 },
+    { name: "Loaded Sandwhich", price: "₹249", image: "./css/images/food-items/Mayuri/LOADED SANDWITCH.jpg", quantity: 0 },
+    { name: "Masala Dosa", price: "₹219", image: "./css/images/food-items/Mayuri/masala dosa.jpg", quantity: 0 },
+    { name: "Masala Paneer Samosa", price: "₹159", image: "./css/images/food-items/Mayuri/masala paneer samosa.png", quantity: 0 },
+    { name: "Paneer Fried Momo", price: "₹189", image: "./css/images/food-items/Mayuri/paneer fried momo.jpg", quantity: 0 },
+    { name: "Paneer Hotdog", price: "₹229", image: "./css/images/food-items/Mayuri/paneer hotdog.jpg", quantity: 0 },
+    { name: "Paneer Steam Momo", price: "₹329", image: "./css/images/food-items/Mayuri/paneer steam momo.jpg", quantity: 0 },
+    { name: "Paneer Tikka", price: "₹259", image: "./css/images/food-items/Mayuri/paneer tikka.png", quantity: 0 },
+    { name: "Pani Puri", price: "₹169", image: "./css/images/food-items/Mayuri/pani puri.png", quantity: 0 },
+    { name: "Papdi Chat", price: "₹289", image: "./css/images/food-items/Mayuri/papdi chat.png", quantity: 0 },
+    { name: "Pav Bhaji", price: "₹199", image: "./css/images/food-items/Mayuri/pav bhaji.png", quantity: 0 },
+    { name: "Raj Kachori", price: "₹279", image: "./css/images/food-items/Mayuri/raj kachori.png", quantity: 0 },
+    { name: "Shahi Kachori", price: "₹239", image: "./css/images/food-items/Mayuri/shahi kachori.png", quantity: 0 },
+    { name: "Vada Pav", price: "₹209", image: "./css/images/food-items/Mayuri/vada pav.png", quantity: 0 },
+    { name: "Vada Smbhar", price: "₹179", image: "./css/images/food-items/Mayuri/vada sambhar.png", quantity: 0 },
+    { name: "Veg Burger", price: "₹199", image: "./css/images/food-items/Mayuri/veg burger.jpg", quantity: 0 },
+    { name: "Veg Cheese Burger", price: "₹229", image: "./css/images/food-items/Mayuri/veg cheese burger.jpg", quantity: 0 },
+    { name: "Veg Fried Momo", price: "₹199", image: "./css/images/food-items/Mayuri/veg fried momo.jpg", quantity: 0 },
+    { name: "Veg Steam Momo", price: "₹169", image: "./css/images/food-items/Mayuri/veg steam momo.jpg", quantity: 0 },
+    { name: "Blueberry Soda", price: "₹269", image: "./css/images/food-items/Mayuri/blue berry soda.jpg", quantity: 0 },
+    { name: "Cold Coffee", price: "₹189", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 },
+    { name: "Green Apple Soda", price: "₹249", image: "./css/images/food-items/Mayuri/green apple soda.jpg", quantity: 0 },
+    { name: "Mint Mojito", price: "₹179", image: "./css/images/food-items/Mayuri/mint mojito.jpg", quantity: 0 },
+    { name: "Kiwi Punch", price: "₹219", image: "./css/images/food-items/Mayuri/kiwi punch.jpg", quantity: 0 },
+    { name: "Pineapple Soda", price: "₹239", image: "./css/images/food-items/Mayuri/pineapple juice.jpg", quantity: 0 },
+    { name: "Idli Sambhar", price: "₹349", image: "./css/images/food-items/Mayuri", quantity: 0 }
 ];
 
 // Create container
@@ -148,22 +148,28 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
         if (quantitySelector) {
             const quantity = parseInt(quantitySelector.value, 10); // Get the selected quantity as an integer
 
-            // Loop through the quantity and add the item to the cart
-            for (let i = 0; i < quantity; i++) {
+            // Check if the item already exists in the cart
+            const existingItemIndex = cart.findIndex(item => item.id === button.dataset.id);
+            if (existingItemIndex !== -1) {
+                // If it exists, increase the quantity
+                cart[existingItemIndex].quantity += quantity;
+            } else {
+                // If it doesn't exist, create a new item object
                 let foodItem = {
                     id: button.dataset.id,
                     name: button.dataset.name,
                     price: button.dataset.price,
-                    // You can also add a unique identifier if needed
+                    quantity: quantity // Set the initial quantity
                 };
 
                 // Add the item to the cart
                 cart.push(foodItem);
             }
 
-            // Update the cart quantity display
-            document.querySelector('.js-cart-quantity-number').innerHTML = cart.length; // Update the displayed quantity
-
+            // Calculate total quantity of all items in the cart
+            const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelector('.js-cart-quantity-number').innerHTML = totalQuantity; // Update the displayed total quantity
+            
             console.log(cart);
         } else {
             console.error('Quantity selector not found for button with ID:', button.dataset.id);
