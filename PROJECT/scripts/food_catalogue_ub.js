@@ -1,35 +1,35 @@
 // Food items data with unique names
 const foodItems = [
-    { name: "Aloo Mutter Samosa", price: "₹149", image: "./css/images/food-items/Mayuri/aloo mutter samosa.png" },
-    { name: "Aloo Tikki", price: "₹299", image: "./css/images/food-items/Mayuri/ALOO TIKKI.png" },
-    { name: "Dahi bhalle", price: "₹199", image: "./css/images/food-items/Mayuri/dahi bhalla.png" },
-    { name: "Dahi Puri", price: "₹129", image: "./css/images/food-items/Mayuri/dahi puri.png" },
-    { name: "Indori Hot Dog", price: "₹179", image: "./css/images/food-items/Mayuri/indori hot dog.png" },
-    { name: "Loaded Sandwhich", price: "₹249", image: "./css/images/food-items/Mayuri/LOADED SANDWITCH.jpg" },
-    { name: "Masala Dosa", price: "₹219", image: "./css/images/food-items/Mayuri/masala dosa.jpg" },
-    { name: "Masala Paneer Samosa", price: "₹159", image: "./css/images/food-items/Mayuri/masala paneer samosa.png" },
-    { name: "Paneer Fried Momo", price: "₹189", image: "./css/images/food-items/Mayuri/paneer fried momo.jpg" },
-    { name: "Paneer Hotdog", price: "₹229", image: "./css/images/food-items/Mayuri/paneer hotdog.jpg" },
-    { name: "Paneer Steam Momo", price: "₹329", image: "./css/images/food-items/Mayuri/paneer steam momo.jpg" },
-    { name: "Paneer Tikka", price: "₹259", image: "./css/images/food-items/Mayuri/paneer tikka.png" },
-    { name: "Pani Puri", price: "₹169", image: "./css/images/food-items/Mayuri/pani puri.png" },
-    { name: "", price: "₹289", image: "./css/images/food-items/Mayuri" },
-    { name: "Greek Gyros", price: "₹199", image: "./css/images/food-items/Mayuri" },
-    { name: "Shrimp Scampi", price: "₹279", image: "./css/images/food-items/Mayuri" },
-    { name: "Vegetable Lasagna", price: "₹239", image: "./css/images/food-items/Mayuri" },
-    { name: "Beef Pho", price: "₹209", image: "./css/images/food-items/Mayuri" },
-    { name: "Chicken Shawarma", price: "₹179", image: "./css/images/food-items/Mayuri" },
-    { name: "Eggplant Parmesan", price: "₹199", image: "./css/images/food-items/Mayuri" },
-    { name: "Fish and Chips", price: "₹229", image: "./css/images/food-items/Mayuri" },
-    { name: "Beef Burrito", price: "₹199", image: "./css/images/food-items/Mayuri" },
-    { name: "Caprese Salad", price: "₹169", image: "./css/images/food-items/Mayuri" },
-    { name: "Lamb Kebabs", price: "₹269", image: "./css/images/food-items/Mayuri" },
-    { name: "Vegetable Tempura", price: "₹189", image: "./css/images/food-items/Mayuri" },
-    { name: "Beef Stroganoff", price: "₹249", image: "./css/images/food-items/Mayuri" },
-    { name: "Spinach and Feta Quiche", price: "₹179", image: "./css/images/food-items/Mayuri" },
-    { name: "Teriyaki Chicken", price: "₹219", image: "./css/images/food-items/Mayuri" },
-    { name: "Vegetable Paella", price: "₹239", image: "./css/images/food-items/Mayuri" },
-    { name: "Beef Wellington", price: "₹349", image: "./css/images/food-items/Mayuri" }
+    { name: "Aloo Mutter Samosa", price: "₹149", image: "./css/images/food-items/Mayuri/aloo mutter samosa.png", quantity: 0 },
+    { name: "Aloo Tikki", price: "₹299", image: "./css/images/food-items/Mayuri/ALOO TIKKI.png", quantity: 0 },
+    { name: "Dahi bhalle", price: "₹199", image: "./css/images/food-items/Mayuri/dahi bhalla.png", quantity: 0 },
+    { name: "Dahi Puri", price: "₹129", image: "./css/images/food-items/Mayuri/dahi puri.png", quantity: 0 },
+    { name: "Indori Hot Dog", price: "₹179", image: "./css/images/food-items/Mayuri/indori hot dog.png", quantity: 0 },
+    { name: "Loaded Sandwhich", price: "₹249", image: "./css/images/food-items/Mayuri/LOADED SANDWITCH.jpg", quantity: 0 },
+    { name: "Masala Dosa", price: "₹219", image: "./css/images/food-items/Mayuri/masala dosa.jpg", quantity: 0 },
+    { name: "Masala Paneer Samosa", price: "₹159", image: "./css/images/food-items/Mayuri/masala paneer samosa.png", quantity: 0 },
+    { name: "Paneer Fried Momo", price: "₹189", image: "./css/images/food-items/Mayuri/paneer fried momo.jpg", quantity: 0 },
+    { name: "Paneer Hotdog", price: "₹229", image: "./css/images/food-items/Mayuri/paneer hotdog.jpg", quantity: 0 },
+    { name: "Paneer Steam Momo", price: "₹329", image: "./css/images/food-items/Mayuri/paneer steam momo.jpg", quantity: 0 },
+    { name: "Paneer Tikka", price: "₹259", image: "./css/images/food-items/Mayuri/paneer tikka.png", quantity: 0 },
+    { name: "Pani Puri", price: "₹169", image: "./css/images/food-items/Mayuri/pani puri.png", quantity: 0 },
+    { name: "", price: "₹289", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Greek Gyros", price: "₹199", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Shrimp Scampi", price: "₹279", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Vegetable Lasagna", price: "₹239", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Beef Pho", price: "₹209", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Chicken Shawarma", price: "₹179", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Eggplant Parmesan", price: "₹199", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Fish and Chips", price: "₹229", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Beef Burrito", price: "₹199", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Caprese Salad", price: "₹169", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Lamb Kebabs", price: "₹269", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Vegetable Tempura", price: "₹189", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Beef Stroganoff", price: "₹249", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Spinach and Feta Quiche", price: "₹179", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Teriyaki Chicken", price: "₹219", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Vegetable Paella", price: "₹239", image: "./css/images/food-items/Mayuri", quantity: 0 },
+    { name: "Beef Wellington", price: "₹349", image: "./css/images/food-items/Mayuri", quantity: 0 }
 ];
 
 // Create container
@@ -148,21 +148,27 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
         if (quantitySelector) {
             const quantity = parseInt(quantitySelector.value, 10); // Get the selected quantity as an integer
 
-            // Loop through the quantity and add the item to the cart
-            for (let i = 0; i < quantity; i++) {
+            // Check if the item already exists in the cart
+            const existingItemIndex = cart.findIndex(item => item.id === button.dataset.id);
+            if (existingItemIndex !== -1) {
+                // If it exists, increase the quantity
+                cart[existingItemIndex].quantity += quantity;
+            } else {
+                // If it doesn't exist, create a new item object
                 let foodItem = {
                     id: button.dataset.id,
                     name: button.dataset.name,
                     price: button.dataset.price,
-                    // You can also add a unique identifier if needed
+                    quantity: quantity // Set the initial quantity
                 };
 
                 // Add the item to the cart
                 cart.push(foodItem);
             }
 
-            // Update the cart quantity display
-            document.querySelector('.js-cart-quantity-number').innerHTML = cart.length; // Update the displayed quantity
+            // Calculate total quantity of all items in the cart
+            const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelector('.js-cart-quantity-number').innerHTML = totalQuantity; // Update the displayed total quantity
             
             console.log(cart);
         } else {
