@@ -9,11 +9,10 @@ body {
 
 /* NAVBAR */
 .custom-navbar {
-    background-color: rgba(30, 29, 29, 0.643); 
+    background-color: rgba(0, 0, 0, 0.8); 
     backdrop-filter: blur(5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 50px rgba(101, 156, 6, 0.3); 
     padding: 0.5rem 1rem;
-    border-bottom: 1px solid rgb(60, 59, 59);
 }
 
 .navbar .nav-link {
@@ -30,18 +29,26 @@ body {
     height: 40px;
     border-radius: 50%; 
     object-fit: cover;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.user-pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .navbar-nav .nav-item {
-margin: 0 1vw 0 1vw;
-color: #ff5733;
-font-family: "Raleway", sans-serif;
-font-weight: 600;
+    margin: 0 1vw 0 1vw;
+    color: #ff5733;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
 }
 
 .navbar-nav .nav-item .nav-link.active:hover {
-color: #c70039; 
+    color: #c70039; 
 }
 /* Search input styling */
 .search-container {
@@ -50,9 +57,9 @@ color: #c70039;
     align-items: center;
 }
 
-.fa-magnifying-glass {
+.search-icon {
     position: absolute;
-    left: 12px;
+    right: 210px; /* Position to the right of the search text */
     color: rgba(255, 255, 255, 0.5);
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -124,21 +131,52 @@ color: #c70039;
     color: #1eff00;
 }
 
-.form-control {
-    background-color: rgba(128, 128, 128, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
+/*  */
+
+.navbar-brand {
+    padding: 0;
+    margin-right: 2rem;
 }
 
-.form-control::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
 .logo {
     display: flex;
     align-items: center;
     height: 40px;
     font-family: "Lily Script One", system-ui; 
 }
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    right: 210px; /* Position to the right of the search text */
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.cart {
+    background-color: #ffffff00;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.cart:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control:focus + .search-icon {
+    opacity: 0;
+}
+
 
 
 /*card style*/

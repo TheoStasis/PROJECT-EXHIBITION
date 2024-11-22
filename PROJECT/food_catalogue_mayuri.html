@@ -35,7 +35,16 @@
                 <form class="d-flex ms-auto" role="search">
                     <div class="search-container">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #f7f7f7;"></i>
+                        <i class="fa-solid fa-magnifying-glass search-icon" style="color: #f7f7f7;"></i>
+                    </div>
+                    <div class="cart-container position-relative">
+                        <button class="cart">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                <span class="cart-count fw-bold text-white">0</span>
+                                <span class="visually-hidden">items in cart</span>
+                            </span>
+                        </button>
                     </div>
                     <a href="profile.html" class="user-pfp">
                         <img src="css/images/figma/user-pfp.jpg" style="border-radius: 50%; width: 3vw;">
@@ -56,9 +65,10 @@
    
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2024/11/21/21/20241121211844-RWTPBL3L.js"></script>
+   <script src="https://kit.fontawesome.com/2974af2fca.js" crossorigin="anonymous"></script>
        
     <script src="/PROJECT/scripts/cart.js"></script>
-    <script src="/PROJECT/scripts/food_catalogue_mayuri.js"></script> 
+    <script src="scripts/food_catalogue_mayuri.js"></script> 
     <!-- <script src="scripts/food_catalogue_mayuri.js"></script>    -->
 </body>
 </html>
