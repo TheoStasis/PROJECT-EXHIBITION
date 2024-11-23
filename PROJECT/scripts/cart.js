@@ -1,16 +1,27 @@
-let cart = [];
+export let cart = [];
 
-// function displayCartItems() {
-//     const cartItemsContainer = document.getElementById('cart-items');
-//     cartItemsContainer.innerHTML = ''; // Clear previous items
+export function addToCart(button) {
+  const quantitySelector = document.querySelector(`.js-quantity-selector-${button.dataset.id}`);
+  if (quantitySelector) {
+      const quantity = parseInt(quantitySelector.value, 10);
+      const foodItem = {
+          id: button.dataset.id,
+          name: button.dataset.name,
+          price: button.dataset.price,
+          quantity: quantity
+      };
+      // Logic to add foodItem to cart
+      cart.push(foodItem); // Add item to cart
+      console.log(cart); // Log the cart array to the console
+      updateCartQuantity();
+  } else {
+      console.error('Quantity selector not found for button with ID:', button.dataset.id);
+  }
+}
 
-//     cart.forEach(item => {
-//         const itemDiv = document.createElement('div');
-//         itemDiv.classList.add('col-12', 'border', 'p-3', 'mb-3');
-//         itemDiv.innerText = `Name: ${item.name}\nPrice: ₹${item.price}\nQuantity: ${item.quantity}`;
-//         cartItemsContainer.appendChild(itemDiv);
-//     });
-// }
+// Function to update cart quantity display
+export function updateCartQuantity() {
+  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+  document.querySelector('.js-cart-quantity-number').innerHTML = totalQuantity;
+}
 
-// // Call the function to display cart items
-// displayCartItems();
