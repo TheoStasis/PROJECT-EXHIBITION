@@ -1,0 +1,312 @@
+// schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // Replace with your actual database URL
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model UserRole {
+  id        Int       @id @default(autoincrement())
+  roleName  String    @db.VarChar(50)
+  createdAt DateTime  @default(now()) @db.Timestamp(6)
+  updatedAt DateTime? @db.Timestamp(6)
+  users     User[]
+}
+
+model User {
+  id                Int                @id @default(autoincrement())
+  roleId            Int
+  fullName          String?            @db.VarChar(100)
+  email             String             @unique @db.VarChar(100)
+  phoneNumber       String?            @unique @db.VarChar(15)
+  status            UserStatus         @default(inactive)
+  phoneVerifiedAt   DateTime?          @db.Timestamp(6)
+  emailVerifiedAt   DateTime?          @db.Timestamp(6)
+  createdAt         DateTime           @default(now()) @db.Timestamp(6)
+  updatedAt         DateTime           @default(now()) @updatedAt @db.Timestamp(6)
+  role              UserRole           @relation(fields: [roleId], references: [id])
+  verificationCodes VerificationCode[]
+  devices           UserDevice[]
+  orders            Order[]
+  userAddresses     UserAddress[]
+  Restaurant        Restaurant[]
+  Driver            Driver[]
+  Cart              Cart[]
+}
+
+enum UserStatus {
+  inactive
+  active
+  blocked
+}
+
+model VerificationCode {
+  id               Int                @id @default(autoincrement())
+  userId           Int
+  code             String             @db.VarChar(100)
+  verificationType VerificationType
+  status           VerificationStatus @default(not_verified)
+  createdAt        DateTime           @default(now()) @db.Timestamp(6)
+  updatedAt        DateTime           @default(now()) @updatedAt @db.Timestamp(6)
+  user             User               @relation(fields: [userId], references: [id])
+}
+
+enum VerificationType {
+  phone
+  email
+}
+
+enum VerificationStatus {
+  verified
+  not_verified
+}
+
+model Restaurant {
+  id                Int                @id @default(autoincrement())
+  userId            Int
+  name              String             @db.VarChar(100)
+  address           String             @db.Text
+  locality          String             @db.Text
+  cityId            Int
+  stateId           Int
+  countryId         Int
+  latitude          Float
+  longitude         Float
+  rating            Float?
+  status            RestaurantStatus   @default(inactive)
+  isAcceptingOrders Boolean            @default(false)
+  user              User               @relation(fields: [userId], references: [id])
+  city              City               @relation(fields: [cityId], references: [id])
+  state             State              @relation(fields: [stateId], references: [id])
+  country           Country            @relation(fields: [countryId], references: [id])
+  restaurantTimings RestaurantTiming[]
+  restaurantMedia   RestaurantMedia[]
+  menus             Menu[]
+  Order             Order[]
+}
+
+enum RestaurantStatus {
+  active
+  inactive
+}
+
+model Country {
+  id          Int           @id @default(autoincrement())
+  countryName String        @db.VarChar(100)
+  status      CountryStatus @default(active)
+  states      State[]
+  cities      City[]
+  Restaurant  Restaurant[]
+  UserAddress UserAddress[]
+}
+
+enum CountryStatus {
+  active
+  inactive
+}
+
+model State {
+  id          Int           @id @default(autoincrement())
+  countryId   Int
+  stateName   String        @db.VarChar(100)
+  status      StateStatus   @default(active)
+  country     Country       @relation(fields: [countryId], references: [id])
+  cities      City[]
+  Restaurant  Restaurant[]
+  UserAddress UserAddress[]
+}
+
+enum StateStatus {
+  active
+  inactive
+}
+
+model City {
+  id            Int           @id @default(autoincrement())
+  countryId     Int
+  stateId       Int
+  cityName      String        @db.VarChar(100)
+  status        CityStatus    @default(active)
+  country       Country       @relation(fields: [countryId], references: [id])
+  state         State         @relation(fields: [stateId], references: [id])
+  restaurants   Restaurant[]
+  userAddresses UserAddress[]
+}
+
+enum CityStatus {
+  active
+  inactive
+}
+
+model Driver {
+  id            Int      @id @default(autoincrement())
+  userId        Int
+  isKycVerified Boolean  @default(false)
+  rating        Float?
+  createdAt     DateTime @default(now()) @db.Timestamp(6)
+  updatedAt     DateTime @default(now()) @updatedAt @db.Timestamp(6)
+  user          User     @relation(fields: [userId], references: [id])
+}
+
+model RestaurantTiming {
+  id           Int        @id @default(autoincrement())
+  restaurantId Int
+  weekDay      String     @db.VarChar(20)
+  startTime    DateTime   @db.Time
+  endTime      DateTime   @db.Time
+  createdAt    DateTime   @default(now()) @db.Timestamp(6)
+  updatedAt    DateTime   @default(now()) @updatedAt @db.Timestamp(6)
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+}
+
+model RestaurantMedia {
+  id           Int         @id @default(autoincrement())
+  restaurantId Int
+  mediaName    String      @db.Text
+  mediaType    MediaType // Use the MediaType enum directly
+  status       MediaStatus @default(active)
+  createdAt    DateTime    @default(now()) @db.Timestamp(6)
+  updatedAt    DateTime    @default(now()) @updatedAt @db.Timestamp(6)
+  restaurant   Restaurant  @relation(fields: [restaurantId], references: [id])
+}
+
+enum MediaType {
+  image
+  video
+}
+
+enum MediaStatus {
+  active
+  inactive
+}
+
+model MenuCategory {
+  id      Int        @id @default(autoincrement())
+  catName String     @db.VarChar(100)
+  status  StatusType @default(active)
+  menus   Menu[]
+}
+
+enum StatusType {
+  active
+  inactive
+}
+
+model Menu {
+  id           Int           @id @default(autoincrement())
+  restaurantId Int
+  categoryId   Int
+  itemName     String        @db.VarChar(100)
+  description  String?       @db.Text
+  imageUrl     String?       @db.Text
+  price        Float
+  rating       Float?
+  status       StatusType    @default(active)
+  createdAt    DateTime      @default(now()) @db.Timestamp(6)
+  updatedAt    DateTime      @default(now()) @updatedAt @db.Timestamp(6)
+  restaurant   Restaurant    @relation(fields: [restaurantId], references: [id])
+  category     MenuCategory  @relation(fields: [categoryId], references: [id])
+  MenuVariant  MenuVariant[]
+  Cart         Cart[]
+}
+
+model MenuVariant {
+  id          Int        @id @default(autoincrement())
+  menuId      Int
+  varietyName String     @db.VarChar(50)
+  price       Float
+  status      StatusType @default(active)
+  createdAt   DateTime   @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime   @default(now()) @updatedAt @db.Timestamp(6)
+  menu        Menu       @relation(fields: [menuId], references: [id])
+  Cart        Cart[]
+}
+
+model UserDevice {
+  id          Int        @id @default(autoincrement())
+  userId      Int
+  deviceType  DeviceType
+  osType      String
+  modelInfo   String
+  latitude    Float?
+  longitude   Float?
+  deviceToken String?    @db.Text
+  createdAt   DateTime   @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime   @default(now()) @updatedAt @db.Timestamp(6)
+  user        User       @relation(fields: [userId], references: [id])
+}
+
+enum DeviceType {
+  phone
+  desktop
+}
+
+model Cart {
+  id        Int          @id @default(autoincrement())
+  userId    Int
+  menuId    Int
+  variantId Int?
+  quantity  Int
+  createdAt DateTime     @default(now()) @db.Timestamp(6)
+  updatedAt DateTime     @default(now()) @updatedAt @db.Timestamp(6)
+  user      User         @relation(fields: [userId], references: [id])
+  menu      Menu         @relation(fields: [menuId], references: [id])
+  variant   MenuVariant? @relation(fields: [variantId], references: [id])
+}
+
+model Order {
+  id              Int           @id @default(autoincrement())
+  userId          Int
+  restaurantId    Int
+  totalAmount     Float
+  discountAmount  Float         @default(0)
+  discountRate    Float         @default(0)
+  deliveryCharges Float         @default(0)
+  taxAmount       Float         @default(0)
+  netAmount       Float
+  paymentMode     PaymentMode
+  paymentStatus   PaymentStatus @default(not_paid)
+  status          OrderStatus   @default(placed)
+  createdAt       DateTime      @default(now()) @db.Timestamp(6)
+  updatedAt       DateTime      @default(now()) @updatedAt @db.Timestamp(6)
+  user            User          @relation(fields: [userId], references: [id])
+  restaurant      Restaurant    @relation(fields: [restaurantId], references: [id])
+}
+
+enum PaymentMode {
+  cash_on_delivery
+  online
+}
+
+enum PaymentStatus {
+  paid
+  not_paid
+}
+
+enum OrderStatus {
+  placed
+  in_progress
+  completed
+  cancelled
+}
+
+model UserAddress {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  cityId    Int
+  stateId   Int
+  countryId Int
+  address   String   @db.Text
+  isPrimary Boolean  @default(false)
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+  updatedAt DateTime @default(now()) @updatedAt @db.Timestamp(6)
+  user      User     @relation(fields: [userId], references: [id])
+  city      City     @relation(fields: [cityId], references: [id])
+  state     State    @relation(fields: [stateId], references: [id])
+  country   Country  @relation(fields: [countryId], references: [id])
+}
+

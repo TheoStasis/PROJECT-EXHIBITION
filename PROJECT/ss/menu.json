@@ -1,0 +1,23 @@
+[
+  {
+    "restaurant_id": 1,
+    "name": "Margherita Pizza",
+    "description": "Classic pizza with fresh mozzarella and basil.",
+    "price": 300.0,
+    "availability": true
+  },
+  {
+    "restaurant_id": 1,
+    "name": "Veggie Burger",
+    "description": "Delicious veggie patty with fresh lettuce and tomatoes.",
+    "price": 150.0,
+    "availability": true
+  },
+  {
+    "restaurant_id": 2,
+    "name": "Chicken Biryani",
+    "description": "Spicy and aromatic chicken biryani.",
+    "price": 250.0,
+    "availability": true
+  }
+]
