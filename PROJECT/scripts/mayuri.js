@@ -12,57 +12,66 @@ document.addEventListener('DOMContentLoaded', () => {
     row.className = 'row g-4';
     container.appendChild(row);
 
-    // Generate 30 cards
-    foodItems.slice(0, 30).forEach((item, i) => {
-        // Create column
-        const col = document.createElement('div');
-        col.className = 'col-md-3';
-        
-        // Create card
-        const card = document.createElement('div');
-        card.className = 'card h-100 mb-4 glassmorphism'; // Added glassmorphism class
-        card.style.textAlign = 'center';
-        
-        // Create card content
-        card.innerHTML = `
-            <img src="${item.image}" class="card-img-top" alt="Food" style="height: 200px; object-fit: cover;">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">${item.name}</h5>
-                <p class="card-text">${item.price}</p>
-                <div class="product-quantity-container">
-                    <select class = "js-quantity-selector-${i}">
-                    <option selected value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    </select>
+    // Function to generate food item cards
+    const generateFoodCards = () => {
+        // Clear existing cards
+        row.innerHTML = '';
+
+        // Generate cards for each food item
+        foodItems.forEach((item, i) => {
+            // Create column
+            const col = document.createElement('div');
+            col.className = 'col-md-3';
+            
+            // Create card
+            const card = document.createElement('div');
+            card.className = 'card h-100 mb-4 glassmorphism'; // Added glassmorphism class
+            card.style.textAlign = 'center';
+            
+            // Create card content
+            card.innerHTML = `
+                <img src="${item.image}" class="card-img-top" alt="Food" style="height: 200px; object-fit: cover;">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">${item.name}</h5>
+                    <p class="card-text">${item.price}</p>
+                    <div class="product-quantity-container">
+                        <select class = "js-quantity-selector-${i}">
+                        <option selected value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        </select>
+                    </div>
+                    <button class="btn mt-auto align-self-end js-add-to-cart" style="background-color: rgba(255, 0, 0, 0.7); color: white;"
+                        data-id="${i}" data-name="${item.name}" data-price="${item.price}">
+                        <i class="bi bi-cart-plus-fill"></i>
+                    </button>
                 </div>
-                <button class="btn mt-auto align-self-end js-add-to-cart" style="background-color: rgba(255, 0, 0, 0.7); color: white;"
-                    data-id="${i}" data-name="${item.name}" data-price="${item.price}">
-                    <i class="bi bi-cart-plus-fill"></i>
-                </button>
-            </div>
-        `;
-        
-        // Add hover effect
-        card.style.transition = 'transform 0.3s ease';
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'scale(1.05)';
+            `;
+            
+            // Add hover effect
+            card.style.transition = 'transform 0.3s ease';
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'scale(1)';
+            });
+            
+            // Append card to column and column to row
+            col.appendChild(card);
+            row.appendChild(col);
         });
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'scale(1)';
-        });
-        
-        // Append card to column and column to row
-        col.appendChild(card);
-        row.appendChild(col);
-    });
+    };
+
+    // Initial generation of food cards
+    generateFoodCards();
 
     // Add required Bootstrap Icons CSS
     const linkElement = document.createElement('link');
