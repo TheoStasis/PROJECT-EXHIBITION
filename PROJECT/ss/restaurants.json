@@ -1,0 +1,37 @@
+[
+  {
+    "user": {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com"
+    },
+    "restaurants": [
+      {
+        "name": "Mayuri Cafe",
+        "address": "123 Main Street",
+        "locality": "Downtown",
+        "cityId": 1,
+        "stateId": 1,
+        "countryId": 1,
+        "latitude": 12.9716,
+        "longitude": 77.5946,
+        "rating": 4.5,
+        "status": "active",
+        "isAcceptingOrders": true
+      },
+      {
+        "name": "Underbelly",
+        "address": "456 Elm Street",
+        "locality": "Uptown",
+        "cityId": 1,
+        "stateId": 1,
+        "countryId": 1,
+        "latitude": 13.0827,
+        "longitude": 80.2707,
+        "rating": 4.7,
+        "status": "active",
+        "isAcceptingOrders": true
+      }
+    ]
+  }
+]

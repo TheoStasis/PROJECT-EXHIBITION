@@ -1,0 +1,27 @@
+[
+  {
+    "id": "UB-001",
+    "restaurant_id": 1,
+    "name": "Sweet Corn Pizza",
+    "description": "Cheesy pizza topped with sweet corn and herbs",
+    "price": 249.0,
+    "availability": true
+  },
+  {
+    "id": "UB-002",
+    "restaurant_id": 1,
+    "name": "UB Special Veg Pizza",
+    "description": "A unique vegetarian pizza with rich toppings",
+    "price": 299.0,
+    "availability": true
+  },
+  // ... remaining items following same format ...
+  {
+    "id": "UB-093",
+    "restaurant_id": 1,
+    "name": "Chocolate Cake (1 KG)",
+    "description": "Delicious chocolate cake perfect for parties",
+    "price": 899.0,
+    "availability": true
+  }
+] 
