@@ -28,6 +28,7 @@ export const foodItems = [
   { name: "Green Apple Soda", price: "₹249", image: "./css/images/food-items/Mayuri/green apple soda.jpg", quantity: 0 },
   { name: "Mint Mojito", price: "₹179", image: "./css/images/food-items/Mayuri/mint mojito.jpg", quantity: 0 },
   { name: "Kiwi Punch", price: "₹219", image: "./css/images/food-items/Mayuri/kiwi punch.jpg", quantity: 0 },
-  { name: "Pineapple Soda", price: "₹239", image: "./css/images/food-items/Mayuri/pineapple juice.jpg", quantity: 0 },
-  { name: "Idli Sambhar", price: "₹349", image: "./css/images/food-items/Mayuri", quantity: 0 }
+  { name: "Pineapple Soda", price: "₹80", image: "./css/images/food-items/Mayuri/pineapple juice.jpg", quantity: 0 },
+  { name: "Watermelon Mojito", price: "₹100", image: "./css/images/food-items/Mayuri/watermelon mojito.jpg", quantity: 0 },
+  { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 }
 ];
