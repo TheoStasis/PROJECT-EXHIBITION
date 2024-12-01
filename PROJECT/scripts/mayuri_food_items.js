@@ -30,5 +30,7 @@ export const foodItems = [
   { name: "Kiwi Punch", price: "₹219", image: "./css/images/food-items/Mayuri/kiwi punch.jpg", quantity: 0 },
   { name: "Pineapple Soda", price: "₹80", image: "./css/images/food-items/Mayuri/pineapple juice.jpg", quantity: 0 },
   { name: "Watermelon Mojito", price: "₹100", image: "./css/images/food-items/Mayuri/watermelon mojito.jpg", quantity: 0 },
+  { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 },
+  { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 },
   { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 }
 ];
