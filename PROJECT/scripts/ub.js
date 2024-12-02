@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     container.appendChild(row);
 
     // Generate 30 cards
-    foodItems.slice(0, 30).forEach((item, i) => {
+    foodItems.slice(0, 90).forEach((item, i) => {
         // Create column
         const col = document.createElement('div');
         col.className = 'col-md-3';
