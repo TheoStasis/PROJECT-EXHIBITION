@@ -59,5 +59,13 @@ export const foodItems = [
   { name: "Paneer Butter Masala", price: "₹158", image: "./css/images/food-items/Underbelly/paneer butter masala.png", quantity: 0 },
   { name: "Kadai Paneer Masala", price: "₹147", image: "./css/images/food-items/Underbelly/kadai paneer masala.png", quantity: 0 },
   { name: "Paneer Tikka Masala", price: "₹158", image: "./css/images/food-items/Underbelly/paneer tikka masala.png", quantity: 0 },
-  { name: "Shahi Paneer", price: "₹147", image: "./css/images/food-items/Underbelly/shahi paneer.png", quantity: 0 } 
+  { name: "Shahi Paneer", price: "₹147", image: "./css/images/food-items/Underbelly/shahi paneer.png", quantity: 0 },
+  { name: "Chicken Tikka Masala", price: "₹168", image: "./css/images/food-items/Underbelly/chicken tikka masala.png", quantity: 0 },
+  { name: "Schezwan Chicken Gravy", price: "₹168", image: "./css/images/food-items/Underbelly/schezwan chicken gravy.png", quantity: 0 },
+  { name: "Dal Makhni", price: "₹150", image: "./css/images/food-items/Underbelly/dal makhni.png", quantity: 0 },
+  { name: "Kadai Sabzi", price: "₹140", image: "./css/images/food-items/Underbelly/kadai sabzi.png", quantity: 0 },
+  { name: "Punjabi Chicken Masala", price: "₹168", image: "./css/images/food-items/Underbelly/punjabi chicken masala.png", quantity: 0 },
+  { name: "Butter Chicken Masala", price: "₹168", image: "./css/images/food-items/Underbelly/butter chicken masala.png", quantity: 0 },
+  { name: "Chicken Lababdar", price: "₹168", image: "./css/images/food-items/Underbelly/chicken lababdar.png", quantity: 0 },
+  { name: "Tandoori Roti", price: "₹30", image: "./css/images/food-items/Underbelly/tandoori roti.png", quantity: 0 }
 ];
