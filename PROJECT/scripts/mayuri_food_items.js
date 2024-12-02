@@ -6,7 +6,6 @@ export const foodItems = [
   { name: "Dahi Puri", price: "₹129", image: "./css/images/food-items/Mayuri/dahi puri.png", quantity: 0 },
   { name: "Indori Hot Dog", price: "₹179", image: "./css/images/food-items/Mayuri/indori hot dog.png", quantity: 0 },
   { name: "Loaded Sandwhich", price: "₹249", image: "./css/images/food-items/Mayuri/LOADED SANDWITCH.jpg", quantity: 0 },
-  { name: "Masala Dosa", price: "₹219", image: "./css/images/food-items/Mayuri/masala dosa.jpg", quantity: 0 },
   { name: "Masala Paneer Samosa", price: "₹159", image: "./css/images/food-items/Mayuri/masala paneer samosa.png", quantity: 0 },
   { name: "Paneer Fried Momo", price: "₹189", image: "./css/images/food-items/Mayuri/paneer fried momo.jpg", quantity: 0 },
   { name: "Paneer Hotdog", price: "₹229", image: "./css/images/food-items/Mayuri/paneer hotdog.jpg", quantity: 0 },
@@ -18,7 +17,7 @@ export const foodItems = [
   { name: "Raj Kachori", price: "₹279", image: "./css/images/food-items/Mayuri/raj kachori.png", quantity: 0 },
   { name: "Shahi Kachori", price: "₹239", image: "./css/images/food-items/Mayuri/shahi kachori.png", quantity: 0 },
   { name: "Vada Pav", price: "₹209", image: "./css/images/food-items/Mayuri/vada pav.png", quantity: 0 },
-  { name: "Vada Smbhar", price: "₹179", image: "./css/images/food-items/Mayuri/vada sambhar.png", quantity: 0 },
+  { name: "Vada Sambhar", price: "₹179", image: "./css/images/food-items/Mayuri/vada sambhar.png", quantity: 0 },
   { name: "Veg Burger", price: "₹199", image: "./css/images/food-items/Mayuri/veg burger.jpg", quantity: 0 },
   { name: "Veg Cheese Burger", price: "₹229", image: "./css/images/food-items/Mayuri/veg cheese burger.jpg", quantity: 0 },
   { name: "Veg Fried Momo", price: "₹199", image: "./css/images/food-items/Mayuri/veg fried momo.jpg", quantity: 0 },
@@ -30,7 +29,23 @@ export const foodItems = [
   { name: "Kiwi Punch", price: "₹219", image: "./css/images/food-items/Mayuri/kiwi punch.jpg", quantity: 0 },
   { name: "Pineapple Soda", price: "₹80", image: "./css/images/food-items/Mayuri/pineapple juice.jpg", quantity: 0 },
   { name: "Watermelon Mojito", price: "₹100", image: "./css/images/food-items/Mayuri/watermelon mojito.jpg", quantity: 0 },
-  { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 },
-  { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 },
-  { name: "Cold Coffee", price: "₹80", image: "./css/images/food-items/Mayuri/cold coffee.jpg", quantity: 0 }
+  { name: "Strawberry Shake", price: "₹80", image: "./css/images/food-items/Mayuri/Strawberry Shake.jpg", quantity: 0 },
+  { name: "Banana Shake", price: "₹80", image: "./css/images/food-items/Mayuri/banana shake.jpg", quantity: 0 },
+  { name: "Mango Shake", price: "₹100", image: "./css/images/food-items/Mayuri/mango shake.jpg", quantity: 0 },
+  { name: "Lassi", price: "₹60", image: "./css/images/food-items/Mayuri/Lassi.png", quantity: 0 },
+  { name: "Mango Lassi", price: "₹80", image: "./css/images/food-items/Mayuri/Mango Lassi.png", quantity: 0 },
+  { name: "Chocolate Lassi", price: "₹80", image: "./css/images/food-items/Mayuri/Chocolate Lassi.png", quantity: 0 },
+  { name: "Mini Idli", price: "₹50", image: "./css/images/food-items/Mayuri/mini idli.png", quantity: 0 },
+  { name: "Fried Idli", price: "₹50", image: "./css/images/food-items/Mayuri/fried idli.png", quantity: 0 },
+  { name: "Dosa Plain", price: "₹80", image: "./css/images/food-items/Mayuri/dosa plain.png", quantity: 0 },
+  { name: "Masala Dosa", price: "₹219", image: "./css/images/food-items/Mayuri/masala dosa.jpg", quantity: 0 },
+  { name: "Jinni Dosa", price: "₹110", image: "./css/images/food-items/Mayuri/jinni dosa.png", quantity: 0 },
+  { name: "Corn Cheese Dosa", price: "₹110", image: "./css/images/food-items/Mayuri/corn cheese dosa.png", quantity: 0 },
+  { name: "Paneer Masala Dosa", price: "₹110", image: "./css/images/food-items/Mayuri/paneer masala dosa.png", quantity: 0 },
+  { name: "Rasmalai", price: "₹30", image: "./css/images/food-items/Mayuri/rasmalai.png", quantity: 0 },
+  { name: "Gulab Jamun", price: "₹20", image: "./css/images/food-items/Mayuri/gulab jamun.png", quantity: 0 },
+  { name: "Rabdi", price: "₹50", image: "./css/images/food-items/Mayuri/rabdi.png", quantity: 0 },
+  { name: "Mango Rabdi", price: "₹60", image: "./css/images/food-items/Mayuri/mango rabdi.png", quantity: 0 }
+
+
 ];
