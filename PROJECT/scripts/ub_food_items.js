@@ -67,5 +67,11 @@ export const foodItems = [
   { name: "Punjabi Chicken Masala", price: "₹168", image: "./css/images/food-items/Underbelly/punjabi chicken masala.png", quantity: 0 },
   { name: "Butter Chicken Masala", price: "₹168", image: "./css/images/food-items/Underbelly/butter chicken masala.png", quantity: 0 },
   { name: "Chicken Lababdar", price: "₹168", image: "./css/images/food-items/Underbelly/chicken lababdar.png", quantity: 0 },
-  { name: "Tandoori Roti", price: "₹30", image: "./css/images/food-items/Underbelly/tandoori roti.png", quantity: 0 }
+  { name: "Tandoori Roti", price: "₹30", image: "./css/images/food-items/Underbelly/tandoori roti.png", quantity: 0 },
+  { name: "Paneer Kulcha (2 Pcs)", price: "₹130", image: "./css/images/food-items/Underbelly/paneer kulcha.png", quantity: 0 },
+  { name: "Tandoori Aloo Paratha (2 Pcs)", price: "₹100", image: "./css/images/food-items/Underbelly/tandoori aloo paratha.png", quantity: 0 },
+  { name: "Butter Naan", price: "₹42", image: "./css/images/food-items/Underbelly/butter naan.png", quantity: 0 },
+  { name: "Garlic Naan", price: "₹45", image: "./css/images/food-items/Underbelly/garlic naan.png", quantity: 0 },
+  { name: "Ginger Tea", price: "₹15", image: "./css/images/food-items/Underbelly/ginger tea.jpg", quantity: 0 },
+  { name: "Coffee", price: "₹15", image: "./css/images/food-items/Underbelly/coffee.jpg", quantity: 0 }
 ];
