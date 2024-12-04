@@ -247,7 +247,79 @@ hr {
     color:rgb(0, 0, 0);
 }
 
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+  
+  input {
+    font-size: 1rem;
+  }
+  
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    border: 1px solid rgb(102, 102, 102);
+    background-color: rgba(211, 211, 211, 0.849);
+    padding: .5rem;
+    font-weight: 800;
+  }
+  
+  .card > .header {
+    margin-bottom: .25rem;
+  }
+  
+  .card > .body {
+    font-size: .8rem;
+    color: #777;
+  }
+  
+  .hide {
+    display: none;
+  }
+
 
 
 
 /* BACKGROUND GRADIENT */
+
+.user-cards {
+    display: none;
+    max-height: 50vh; 
+    max-width: 20vw;
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: rgba(26, 25, 25, 0.366); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; /* Optional: rounded corners */
+    padding: 10px; /* Optional: padding for better spacing */
+    margin-top: 10px; /* Add margin to create space below the search bar */
+    margin-left: auto; /* Align to the right */
+    position: absolute;
+    z-index: 100;
+    right: 11vw;
+    
+    /* Add blur and drop shadow */
+    backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.324); /* Adjust the shadow properties as needed */
+}
+
+.card-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.card-img {
+    width: 50px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.card-txt {
+    flex-grow: 1; /* Allow text to take up remaining space */
+}
