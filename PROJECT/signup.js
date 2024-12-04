@@ -85,3 +85,15 @@ googleLogin.addEventListener('click', () => {
             console.error("Error during Google sign-in", error);
         });
 });
+
+// Toggle password
+const passwordInput = document.getElementById('password');
+const showPasswordCheckbox = document.getElementById('showPassword');
+
+showPasswordCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+        passwordInput.type = 'text'; // Change input type to text to show the password
+    } else {
+        passwordInput.type = 'password'; // Change input type back to password to hide it
+    }
+});
