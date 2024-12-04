@@ -1,7 +1,407 @@
 [
   {
+    "id": "MAY-001",
+    "restaurant_id": "Mayuri",
+    "name": "Aloo Tikki",
+    "description": "Crispy potato patty, perfect as a light appetizer.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-002",
+    "restaurant_id": "Mayuri",
+    "name": "Pani Puri",
+    "description": "Crunchy puris filled with tangy, spicy water.",
+    "price": 40.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-003",
+    "restaurant_id": "Mayuri",
+    "name": "Dahi Puri",
+    "description": "Puris topped with yogurt and chutneys.",
+    "price": 60.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-004",
+    "restaurant_id": "Mayuri",
+    "name": "Dahi Balla",
+    "description": "Soft lentil dumplings soaked in creamy yogurt.",
+    "price": 60.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-005",
+    "restaurant_id": "Mayuri",
+    "name": "Raj Kachori",
+    "description": "Large, stuffed crispy kachori with rich fillings.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-006",
+    "restaurant_id": "Mayuri",
+    "name": "Vada Pav",
+    "description": "Spicy potato fritter in a soft bun, Mumbai-style.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-007",
+    "restaurant_id": "Mayuri",
+    "name": "Papdi Chaat",
+    "description": "Crisp papdis topped with chutneys and yogurt.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-008",
+    "restaurant_id": "Mayuri",
+    "name": "Shahi Kachori",
+    "description": "Rich, spicy kachori with flavorful filling.",
+    "price": 30.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-009",
+    "restaurant_id": "Mayuri",
+    "name": "Aloo Mutter Samosa",
+    "description": "Classic potato-pea samosa with a crispy crust.",
+    "price": 20.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-010",
+    "restaurant_id": "Mayuri",
+    "name": "Masala Paneer Samosa",
+    "description": "Samosa filled with spicy paneer mixture.",
+    "price": 30.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-011",
+    "restaurant_id": "Mayuri",
+    "name": "Pav Bhaji",
+    "description": "Spicy mashed vegetable curry served with pav.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-012",
+    "restaurant_id": "Mayuri",
+    "name": "Veg Burger",
+    "description": "Soft bun with a vegetable patty and fresh veggies.",
+    "price": 60.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-013",
+    "restaurant_id": "Mayuri",
+    "name": "Veg Cheese Burger",
+    "description": "Veg burger with a cheesy twist for extra flavor.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-014",
+    "restaurant_id": "Mayuri",
+    "name": "Loaded Sandwich",
+    "description": "Sandwich packed with veggies and sauces.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-015",
+    "restaurant_id": "Mayuri",
+    "name": "Kullhad Pizza",
+    "description": "Unique, clay-cooked pizza with rich toppings.",
+    "price": 100.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-016",
+    "restaurant_id": "Mayuri",
+    "name": "Indori Hot Dog",
+    "description": "Tasty hot dog with a spicy Indori twist.",
+    "price": 60.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-017",
+    "restaurant_id": "Mayuri",
+    "name": "Veg Hot Dog",
+    "description": "Soft bun stuffed with a flavorful veggie filling.",
+    "price": 70.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-018",
+    "restaurant_id": "Mayuri",
+    "name": "Paneer Hot Dog",
+    "description": "Hot dog loaded with grilled paneer filling.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-019",
+    "restaurant_id": "Mayuri",
+    "name": "Paneer Cheese Hot Dog",
+    "description": "Grilled paneer and melted cheese in a hot dog bun.",
+    "price": 90.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-020",
+    "restaurant_id": "Mayuri",
+    "name": "Veg Steam Momo",
+    "description": "Steamed dumplings filled with spiced veggies.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-021",
+    "restaurant_id": "Mayuri",
+    "name": "Veg Fried Momo",
+    "description": "Crispy fried dumplings with a veggie filling.",
+    "price": 100.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-022",
+    "restaurant_id": "Mayuri",
+    "name": "Paneer Steam Momo",
+    "description": "Steamed dumplings with a paneer filling.",
+    "price": 100.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-023",
+    "restaurant_id": "Mayuri",
+    "name": "Paneer Fry Momo",
+    "description": "Fried dumplings with spiced paneer filling.",
+    "price": 120.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-024",
+    "restaurant_id": "Mayuri",
+    "name": "Cheese Corn Steam Momo",
+    "description": "Steamed momos with cheese and corn filling.",
+    "price": 100.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-025",
+    "restaurant_id": "Mayuri",
+    "name": "Cheese Corn Fry Momo",
+    "description": "Fried momos stuffed with cheesy corn.",
+    "price": 120.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-026",
+    "restaurant_id": "Mayuri",
+    "name": "Mint Mojito",
+    "description": "Refreshing minty lime drink to cool you down.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-027",
+    "restaurant_id": "Mayuri",
+    "name": "Green Apple Soda",
+    "description": "Fizzy green apple-flavored soda drink.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-028",
+    "restaurant_id": "Mayuri",
+    "name": "Blueberry",
+    "description": "Refreshing blueberry-flavored beverage.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-029",
+    "restaurant_id": "Mayuri",
+    "name": "Kiwi Punch",
+    "description": "Tangy and sweet kiwi-flavored refreshing punch.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-030",
+    "restaurant_id": "Mayuri",
+    "name": "Seasonal Fruit Juice",
+    "description": "Fresh juice made from seasonal fruits.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-031",
+    "restaurant_id": "Mayuri",
+    "name": "Watermelon Mojito",
+    "description": "Cool watermelon mojito, perfect for summer.",
+    "price": 100.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-032",
+    "restaurant_id": "Mayuri",
+    "name": "Cold Coffee",
+    "description": "Chilled, creamy coffee beverage.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-033",
+    "restaurant_id": "Mayuri",
+    "name": "Strawberry Shake",
+    "description": "Creamy milkshake made with fresh strawberries.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-034",
+    "restaurant_id": "Mayuri",
+    "name": "Banana Shake",
+    "description": "Sweet and healthy banana milkshake.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-035",
+    "restaurant_id": "Mayuri",
+    "name": "Mango Shake",
+    "description": "Thick mango milkshake for a tropical treat.",
+    "price": 100.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-036",
+    "restaurant_id": "Mayuri",
+    "name": "Lassi",
+    "description": "Classic yogurt drink, refreshing and creamy.",
+    "price": 60.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-037",
+    "restaurant_id": "Mayuri",
+    "name": "Mango Lassi",
+    "description": "Sweet mango blended into a creamy lassi.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-038",
+    "restaurant_id": "Mayuri",
+    "name": "Chocolate Lassi",
+    "description": "Creamy lassi with a rich chocolate twist.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-039",
+    "restaurant_id": "Mayuri",
+    "name": "Mini Idli",
+    "description": "Small steamed idlis, light and healthy.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-040",
+    "restaurant_id": "Mayuri",
+    "name": "Fried Idli",
+    "description": "Crispy, golden fried idlis with spices.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-041",
+    "restaurant_id": "Mayuri",
+    "name": "Vada Sambhar",
+    "description": "Lentil donut served with spicy sambhar.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-042",
+    "restaurant_id": "Mayuri",
+    "name": "Dosa Plain",
+    "description": "Classic, thin rice crepe served with chutneys.",
+    "price": 80.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-043",
+    "restaurant_id": "Mayuri",
+    "name": "Masala Dosa",
+    "description": "Dosa filled with spicy potato masala.",
+    "price": 95.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-044",
+    "restaurant_id": "Mayuri",
+    "name": "Jinni Dosa",
+    "description": "Special dosa loaded with rich fillings.",
+    "price": 110.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-045",
+    "restaurant_id": "Mayuri",
+    "name": "Corn Cheese Dosa",
+    "description": "Dosa stuffed with cheesy corn filling.",
+    "price": 110.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-046",
+    "restaurant_id": "Mayuri",
+    "name": "Paneer Masala Dosa",
+    "description": "Dosa with spicy paneer masala filling.",
+    "price": 110.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-047",
+    "restaurant_id": "Mayuri",
+    "name": "Rasmalai",
+    "description": "Soft, spongy dessert soaked in sweet syrup.",
+    "price": 30.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-048",
+    "restaurant_id": "Mayuri",
+    "name": "Gulab Jamun",
+    "description": "Soft, syrup-soaked dessert balls.",
+    "price": 20.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-049",
+    "restaurant_id": "Mayuri",
+    "name": "Rabdi",
+    "description": "Thickened milk dessert with rich flavor.",
+    "price": 50.0,
+    "availability": true
+  },
+  {
+    "id": "MAY-050",
+    "restaurant_id": "Mayuri",
+    "name": "Mango Rabdi",
+    "description": "Creamy rabdi flavored with mango.",
+    "price": 60.0,
+    "availability": true
+  },
+  {
     "id": "UB-001",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Sweet Corn Pizza",
     "description": "Cheesy pizza topped with sweet corn and herbs",
     "price": 249.0,
@@ -9,7 +409,7 @@
   },
   {
     "id": "UB-002",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "UB Special Veg Pizza",
     "description": "A unique vegetarian pizza with rich toppings",
     "price": 299.0,
@@ -17,7 +417,7 @@
   },
   {
     "id": "UB-003",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Tikka Pizza",
     "description": "Pizza with marinated paneer tikka and spices",
     "price": 279.0,
@@ -25,7 +425,7 @@
   },
   {
     "id": "UB-004",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Classic Margherita Pizza",
     "description": "Simple pizza with tomato, cheese, and basil",
     "price": 199.0,
@@ -33,7 +433,7 @@
   },
   {
     "id": "UB-005",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "UB Special Non Veg Pizza",
     "description": "Non-vegetarian pizza with a variety of meats",
     "price": 399.0,
@@ -41,7 +441,7 @@
   },
   {
     "id": "UB-006",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Tikka Pizza",
     "description": "Pizza topped with spicy, grilled chicken tikka",
     "price": 289.0,
@@ -49,7 +449,7 @@
   },
   {
     "id": "UB-007",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Penne Alfredo Pasta",
     "description": "Creamy Alfredo pasta with penne and cheese",
     "price": 249.0,
@@ -57,7 +457,7 @@
   },
   {
     "id": "UB-008",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Penne Arrabiata Pasta",
     "description": "Spicy arrabiata sauce with penne pasta",
     "price": 229.0,
@@ -65,7 +465,7 @@
   },
   {
     "id": "UB-009",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Pink Sauce Pasta",
     "description": "Pasta with a creamy and tangy pink sauce",
     "price": 249.0,
@@ -73,7 +473,7 @@
   },
   {
     "id": "UB-010",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Penne Alfredo Chicken Pasta",
     "description": "Penne pasta with creamy Alfredo sauce and chicken",
     "price": 299.0,
@@ -81,7 +481,7 @@
   },
   {
     "id": "UB-011",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Pink Chicken Sauce Pasta",
     "description": "Pasta with chicken in a creamy pink sauce",
     "price": 299.0,
@@ -89,7 +489,7 @@
   },
   {
     "id": "UB-012",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Penne Arrabiata Chicken Pasta",
     "description": "Spicy penne pasta with chicken in arrabiata sauce",
     "price": 279.0,
@@ -97,7 +497,7 @@
   },
   {
     "id": "UB-013",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Veg Momo",
     "description": "Steamed dumplings filled with delicious vegetable stuffing",
     "price": 139.0,
@@ -105,7 +505,7 @@
   },
   {
     "id": "UB-014",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Momo",
     "description": "Steamed dumplings with spiced paneer filling",
     "price": 159.0,
@@ -113,7 +513,7 @@
   },
   {
     "id": "UB-015",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Momo",
     "description": "Steamed dumplings filled with spiced chicken",
     "price": 179.0,
@@ -121,7 +521,7 @@
   },
   {
     "id": "UB-016",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Bread Omelette",
     "description": "Omelette served with bread for a satisfying meal",
     "price": 99.0,
@@ -129,7 +529,7 @@
   },
   {
     "id": "UB-017",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Masala Omelette",
     "description": "Spicy omelette with onions, tomatoes, and herbs",
     "price": 119.0,
@@ -137,7 +537,7 @@
   },
   {
     "id": "UB-018",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Egg Burji",
     "description": "Scrambled eggs cooked with spices and vegetables",
     "price": 129.0,
@@ -145,7 +545,7 @@
   },
   {
     "id": "UB-019",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Nuggets",
     "description": "Crispy chicken bites served with dipping sauce",
     "price": 169.0,
@@ -153,7 +553,7 @@
   },
   {
     "id": "UB-020",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Wings",
     "description": "Spicy, grilled or fried chicken wings",
     "price": 229.0,
@@ -161,7 +561,7 @@
   },
   {
     "id": "UB-021",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Tikka",
     "description": "Marinated, grilled chicken chunks with spices",
     "price": 229.0,
@@ -169,7 +569,7 @@
   },
   {
     "id": "UB-022",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Malai Tikka",
     "description": "Creamy and tender chicken tikka with a mild flavor",
     "price": 259.0,
@@ -177,7 +577,7 @@
   },
   {
     "id": "UB-023",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Tandoori Chicken Half",
     "description": "Grilled half chicken marinated in tandoori spices",
     "price": 239.0,
@@ -185,7 +585,7 @@
   },
   {
     "id": "UB-024",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Tandoori Chicken Full",
     "description": "Full grilled chicken marinated in tandoori spices",
     "price": 459.0,
@@ -193,7 +593,7 @@
   },
   {
     "id": "UB-025",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chily Chicken Gravy",
     "description": "Spicy chicken cooked in a flavorful gravy",
     "price": 269.0,
@@ -201,7 +601,7 @@
   },
   {
     "id": "UB-026",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Dragon Chicken",
     "description": "Spicy, crispy chicken in a sweet and tangy sauce",
     "price": 269.0,
@@ -209,7 +609,7 @@
   },
   {
     "id": "UB-027",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Classic French Fries",
     "description": "Crispy, golden fried potato strips",
     "price": 89.0,
@@ -217,7 +617,7 @@
   },
   {
     "id": "UB-028",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Masala UB French Fries",
     "description": "French fries with masala seasoning and spices",
     "price": 129.0,
@@ -225,7 +625,7 @@
   },
   {
     "id": "UB-029",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Tikka",
     "description": "Grilled paneer marinated in yogurt and spices",
     "price": 179.0,
@@ -233,7 +633,7 @@
   },
   {
     "id": "UB-030",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Malai Tikka",
     "description": "Creamy paneer tikka with rich malai marinade",
     "price": 199.0,
@@ -241,7 +641,7 @@
   },
   {
     "id": "UB-031",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chilly Paneer Dry",
     "description": "Spicy, crispy paneer tossed with peppers and sauce",
     "price": 199.0,
@@ -249,7 +649,7 @@
   },
   {
     "id": "UB-032",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Veg Manchurian",
     "description": "Fried vegetable balls served in a tangy gravy",
     "price": 159.0,
@@ -257,7 +657,7 @@
   },
   {
     "id": "UB-033",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Double Cheese Sandwich",
     "description": "Sandwich filled with two layers of melted cheese",
     "price": 149.0,
@@ -265,7 +665,7 @@
   },
   {
     "id": "UB-034",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Sweet Corn Sandwich",
     "description": "Sandwich stuffed with sweet corn and cheese",
     "price": 129.0,
@@ -273,7 +673,7 @@
   },
   {
     "id": "UB-035",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Tikka Sandwich",
     "description": "Sandwich with grilled paneer tikka filling",
     "price": 159.0,
@@ -281,7 +681,7 @@
   },
   {
     "id": "UB-036",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Tikka Sandwich",
     "description": "Sandwich with grilled chicken tikka filling",
     "price": 179.0,
@@ -289,7 +689,7 @@
   },
   {
     "id": "UB-037",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Veg Cheese Burger",
     "description": "Veggie burger with melted cheese and fresh veggies",
     "price": 159.0,
@@ -297,7 +697,7 @@
   },
   {
     "id": "UB-038",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Burger",
     "description": "Juicy chicken patty with fresh vegetables and sauces",
     "price": 179.0,
@@ -305,7 +705,7 @@
   },
   {
     "id": "UB-039",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Veg Wrap",
     "description": "Wrap filled with fresh veggies and a tangy dressing",
     "price": 169.0,
@@ -313,7 +713,7 @@
   },
   {
     "id": "UB-040",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Wrap",
     "description": "Wrap with grilled chicken, veggies, and sauces",
     "price": 199.0,
@@ -321,7 +721,7 @@
   },
   {
     "id": "UB-041",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Wrap",
     "description": "Wrap with grilled paneer and fresh veggies",
     "price": 179.0,
@@ -329,7 +729,7 @@
   },
   {
     "id": "UB-042",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Tandoori Soya Chaap",
     "description": "Soya chaap grilled with tandoori spices",
     "price": 229.0,
@@ -337,7 +737,7 @@
   },
   {
     "id": "UB-043",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Malai Soya Chaap",
     "description": "Creamy soya chaap marinated in rich malai sauce",
     "price": 249.0,
@@ -345,7 +745,7 @@
   },
   {
     "id": "UB-044",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Veg Noodles",
     "description": "Stir-fried noodles with a mix of vegetables",
     "price": 169.0,
@@ -353,7 +753,7 @@
   },
   {
     "id": "UB-045",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Noodles",
     "description": "Stir-fried noodles with tender chicken pieces",
     "price": 199.0,
@@ -361,7 +761,7 @@
   },
   {
     "id": "UB-046",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Schezwan Veg Noodles",
     "description": "Spicy stir-fried noodles with Schezwan sauce",
     "price": 179.0,
@@ -369,7 +769,7 @@
   },
   {
     "id": "UB-047",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Schezwan Chicken Noodles",
     "description": "Spicy stir-fried chicken noodles in Schezwan sauce",
     "price": 209.0,
@@ -377,7 +777,7 @@
   },
   {
     "id": "UB-048",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Egg Fried Rice",
     "description": "Fried rice with scrambled eggs and spices",
     "price": 169.0,
@@ -385,7 +785,7 @@
   },
   {
     "id": "UB-049",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Schezwan Veg Fried Rice",
     "description": "Spicy fried rice with veggies and Schezwan sauce",
     "price": 179.0,
@@ -393,7 +793,7 @@
   },
   {
     "id": "UB-050",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Schezwan Chicken Fried Rice",
     "description": "Fried rice with chicken and Schezwan sauce",
     "price": 199.0,
@@ -401,7 +801,7 @@
   },
   {
     "id": "UB-051",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Masala Dosa",
     "description": "Crispy dosa filled with spicy potato filling",
     "price": 149.0,
@@ -409,7 +809,7 @@
   },
   {
     "id": "UB-052",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Plain Dosa",
     "description": "Thin and crispy dosa served with chutneys",
     "price": 129.0,
@@ -417,7 +817,7 @@
   },
   {
     "id": "UB-053",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Kheema Dosa",
     "description": "Dosa filled with spiced paneer kheema",
     "price": 179.0,
@@ -425,7 +825,7 @@
   },
   {
     "id": "UB-054",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Butter Masala",
     "description": "Creamy paneer in a rich butter-based gravy",
     "price": 249.0,
@@ -433,7 +833,7 @@
   },
   {
     "id": "UB-055",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Kadai Paneer Masala",
     "description": "Paneer cooked in a spicy and flavorful gravy",
     "price": 229.0,
@@ -441,7 +841,7 @@
   },
   {
     "id": "UB-056",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Tikka Masala",
     "description": "Paneer cooked in a tangy and spicy tomato gravy",
     "price": 249.0,
@@ -449,7 +849,7 @@
   },
   {
     "id": "UB-057",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Shahi Paneer Masala",
     "description": "Paneer in a royal, rich and creamy gravy",
     "price": 269.0,
@@ -457,7 +857,7 @@
   },
   {
     "id": "UB-058",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Tikka Masala",
     "description": "Grilled chicken in a rich and spicy gravy",
     "price": 279.0,
@@ -465,7 +865,7 @@
   },
   {
     "id": "UB-059",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Schezwan Chicken Gravy",
     "description": "Spicy chicken in a Schezwan-flavored gravy",
     "price": 269.0,
@@ -473,7 +873,7 @@
   },
   {
     "id": "UB-060",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Dal Makhni",
     "description": "Creamy black lentils cooked with butter and spices",
     "price": 169.0,
@@ -481,7 +881,7 @@
   },
   {
     "id": "UB-061",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Kadai Sabzi",
     "description": "Mixed vegetable curry cooked in a spicy kadai gravy",
     "price": 179.0,
@@ -489,7 +889,7 @@
   },
   {
     "id": "UB-062",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Punjabi Chicken Masala",
     "description": "Traditional chicken cooked in Punjabi spices",
     "price": 249.0,
@@ -497,7 +897,7 @@
   },
   {
     "id": "UB-063",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Butter Chicken Masala",
     "description": "Chicken in a rich and creamy butter gravy",
     "price": 279.0,
@@ -505,7 +905,7 @@
   },
   {
     "id": "UB-064",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chicken Lababdar",
     "description": "Chicken in a rich, aromatic gravy with cream",
     "price": 269.0,
@@ -513,7 +913,7 @@
   },
   {
     "id": "UB-065",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Tandoori Roti",
     "description": "Soft and chewy flatbread cooked in a tandoor",
     "price": 39.0,
@@ -521,7 +921,7 @@
   },
   {
     "id": "UB-066",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Paneer Kulcha (2 PCS)",
     "description": "Soft, stuffed flatbread with paneer filling",
     "price": 119.0,
@@ -529,7 +929,7 @@
   },
   {
     "id": "UB-067",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Tandoori Aloo Paratha (2 PCS)",
     "description": "Spicy potato-stuffed paratha cooked in tandoor",
     "price": 109.0,
@@ -537,7 +937,7 @@
   },
   {
     "id": "UB-068",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Butter Naan",
     "description": "Soft, fluffy naan brushed with butter",
     "price": 59.0,
@@ -545,7 +945,7 @@
   },
   {
     "id": "UB-069",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Garlic Naan",
     "description": "Soft naan with a garlicky flavor",
     "price": 69.0,
@@ -553,7 +953,7 @@
   },
   {
     "id": "UB-070",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Ginger Tea",
     "description": "Hot tea flavored with fresh ginger",
     "price": 59.0,
@@ -561,7 +961,7 @@
   },
   {
     "id": "UB-071",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Coffee",
     "description": "Freshly brewed coffee served hot",
     "price": 79.0,
@@ -569,7 +969,7 @@
   },
   {
     "id": "UB-072",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Hot Chocolate",
     "description": "Creamy, rich hot chocolate drink",
     "price": 99.0,
@@ -577,7 +977,7 @@
   },
   {
     "id": "UB-073",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Black Coffee",
     "description": "Strong coffee served without milk or sugar",
     "price": 69.0,
@@ -585,7 +985,7 @@
   },
   {
     "id": "UB-074",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Vanilla Milkshake",
     "description": "Creamy milkshake made with vanilla ice cream",
     "price": 149.0,
@@ -593,7 +993,7 @@
   },
   {
     "id": "UB-075",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chocolate Milkshake",
     "description": "Sweet milkshake made with chocolate ice cream",
     "price": 159.0,
@@ -601,7 +1001,7 @@
   },
   {
     "id": "UB-076",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Butterscotch Milkshake",
     "description": "Milkshake with butterscotch ice cream and flavors",
     "price": 149.0,
@@ -609,7 +1009,7 @@
   },
   {
     "id": "UB-077",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Oreo Milkshake",
     "description": "Creamy milkshake with crushed Oreo cookies",
     "price": 159.0,
@@ -617,7 +1017,7 @@
   },
   {
     "id": "UB-078",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Kitkat Milkshake",
     "description": "Milkshake made with Kitkat and ice cream",
     "price": 169.0,
@@ -625,7 +1025,7 @@
   },
   {
     "id": "UB-079",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Cold Coffee",
     "description": "Chilled coffee with a creamy texture",
     "price": 129.0,
@@ -633,7 +1033,7 @@
   },
   {
     "id": "UB-080",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Orange Juice",
     "description": "Freshly squeezed orange juice",
     "price": 99.0,
@@ -641,7 +1041,7 @@
   },
   {
     "id": "UB-081",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Sweet Lime Juice",
     "description": "Refreshing sweet lime juice",
     "price": 89.0,
@@ -649,7 +1049,7 @@
   },
   {
     "id": "UB-082",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Pineapple Juice",
     "description": "Fresh pineapple juice served chilled",
     "price": 109.0,
@@ -657,7 +1057,7 @@
   },
   {
     "id": "UB-083",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Lime Mint Cooler",
     "description": "Cool and refreshing lime and mint drink",
     "price": 129.0,
@@ -665,7 +1065,7 @@
   },
   {
     "id": "UB-084",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Choco Truffle Pastry",
     "description": "Rich chocolate truffle pastry with a creamy center",
     "price": 129.0,
@@ -673,7 +1073,7 @@
   },
   {
     "id": "UB-085",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Choco Doughnut",
     "description": "Soft doughnut with a chocolate coating",
     "price": 79.0,
@@ -681,7 +1081,7 @@
   },
   {
     "id": "UB-086",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Choco Truffle Cake (500 GM)",
     "description": "A rich chocolate cake with truffle filling",
     "price": 499.0,
@@ -689,7 +1089,7 @@
   },
   {
     "id": "UB-087",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Kitkat Cake (500 GM)",
     "description": "Chocolate cake topped with Kitkat pieces",
     "price": 549.0,
@@ -697,7 +1097,7 @@
   },
   {
     "id": "UB-088",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Oreo Cake (500 GM)",
     "description": "Oreo-flavored cake with cream filling",
     "price": 499.0,
@@ -705,7 +1105,7 @@
   },
   {
     "id": "UB-089",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chocolate Cake (500 GM)",
     "description": "Rich chocolate cake with creamy icing",
     "price": 459.0,
@@ -713,7 +1113,7 @@
   },
   {
     "id": "UB-090",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Choco Truffle (1 KG)",
     "description": "Large chocolate truffle cake with a rich flavor",
     "price": 999.0,
@@ -721,7 +1121,7 @@
   },
   {
     "id": "UB-091",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Kitkat Cake (1 KG)",
     "description": "Large cake with Kitkat chocolate and layers",
     "price": 1099.0,
@@ -729,7 +1129,7 @@
   },
   {
     "id": "UB-092",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Oreo Cake (1 KG)",
     "description": "Large cake with Oreo cookies and cream layers",
     "price": 999.0,
@@ -737,7 +1137,7 @@
   },
   {
     "id": "UB-093",
-    "restaurant_id": 1,
+    "restaurant_id": "UB",
     "name": "Chocolate Cake (1 KG)",
     "description": "Delicious chocolate cake perfect for parties",
     "price": 899.0,

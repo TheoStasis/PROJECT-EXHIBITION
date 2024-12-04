@@ -31,6 +31,9 @@
               <li class="nav-item">
                   <a class="nav-link" href="about-us.html">About us</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
           </ul>
           <form class="d-flex ms-auto" role="search">
               <div class="search-container">
@@ -62,8 +65,12 @@
     <div class="row">
         <div class="col-md-6">
             <div class="glassmorphed-card" style="display: flex; flex-direction: column; align-items: center;">
+
                 <form style="width: 100%; max-width: 600px; display: flex; flex-direction: column; align-items: center;" action="https://api.web3forms.com/submit" method="POST">
+
                     <input type="hidden" name="access_key" value="97bcfccb-c64d-4a4c-8948-703a3332ffe6">
+                    <input type="hidden" name="subject" value="Submission from Delivo">
+                    <input type="hidden" name="from_name" value="Delivo Services">
 
                     <div class="mb-3" style="width: 80%;">
                         <input type="text" name="name" class="form-control  name-field" id="name" placeholder="Name" required>
@@ -74,7 +81,9 @@
                     <div class="mb-3" style="width: 80%;">
                         <textarea class="form-control  description-field" name="message"id="description" rows="7" placeholder="Description" required></textarea>
                     </div>
+
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <button type="submit" type="submit" class="send-btn">Send!</button>
                 </form>
             </div>
