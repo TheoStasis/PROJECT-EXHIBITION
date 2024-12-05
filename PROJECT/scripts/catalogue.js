@@ -1,8 +1,8 @@
-const userCardTemplate = document.querySelector("[data-user-template]")
-const userCardContainer = document.querySelector("[data-user-cards-container]")
-const searchInput = document.querySelector("[data-search]")
+const userCardTemplate = document.querySelector("[data-user-template]");
+const userCardContainer = document.querySelector("[data-user-cards-container]");
+const searchInput = document.querySelector("[data-search]");
 
-let foodList = []
+let foodList = [];
 
 // Hide user cards by default
 userCardContainer.style.display = 'none';
@@ -12,15 +12,16 @@ searchInput.addEventListener("focus", () => {
 });
 
 searchInput.addEventListener("input", e => {
-    const value = e.target.value.toLowerCase()
+    const value = e.target.value.toLowerCase();
     console.log("Search value:", value);
+    
     foodList.forEach(food => {
         const isVisible =
             food.name.toLowerCase().includes(value) ||
-            food.price.toLowerCase().includes(value)
+            food.price.toLowerCase().includes(value);
         console.log(`Food: ${food.name}, Visible: ${isVisible}`);
-        food.element.classList.toggle("hide", !isVisible)
-    })
+        food.element.classList.toggle("hide", !isVisible);
+    });
 
     // Show or hide user cards based on input
     if (value) {
@@ -28,7 +29,7 @@ searchInput.addEventListener("input", e => {
     } else {
         userCardContainer.style.display = 'none'; // Hide user cards if input is empty
     }
-})
+});
 
 searchInput.addEventListener("blur", () => {
     // Optionally hide user cards when input loses focus
@@ -44,22 +45,25 @@ Promise.all([
 ])
 .then(([mayuriData, ubData]) => {
     foodList = [...mayuriData, ...ubData].map(food => {
-        const card = userCardTemplate.content.cloneNode(true).children[0]
-        const image = card.querySelector("[data-image]")
-        const header = card.querySelector("[data-header]")
-        const body = card.querySelector("[data-body]")
-        image.src = food.image
-        header.textContent = food.name
-        body.textContent = food.price
+        console.log("Mayuri Data:", mayuriData);
+        console.log("UB Data:", ubData);
+        const card = userCardTemplate.content.cloneNode(true).children[0];
+        const image = card.querySelector("[data-image]");
+        const header = card.querySelector("[data-header]");
+        const body = card.querySelector("[data-body]");
+        
+        image.src = food.image;
+        header.textContent = food.name;
+        body.textContent = food.price;
 
-        // Add click event to redirect to the specific food item
+        userCardContainer.append(card);
         card.addEventListener("click", () => {
-            const id = food.id; // Get the ID of the food item
-            const baseUrl = food.id.startsWith("MAY") ? "mayuri.html" : "ub.html"; // Determine the base URL
-            window.location.href = `${baseUrl}#${id}`; // Redirect to the specific food item
+            console.log(`Clicked on: ${food.name}`);
+            const id = food.id; 
+            const baseUrl = food.id.startsWith("MAY") ? "mayuri.html" : "ub.html"; 
+            window.location.href = `${baseUrl}#${id}`; 
         });
 
-        userCardContainer.append(card)
-        return { image: food.image, name: food.name, price: food.price, element: card, id: food.id }
-    })
-})
+        return { image: food.image, name: food.name, price: food.price, element: card, id: food.id };
+    });
+});
