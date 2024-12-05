@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
         row.innerHTML = '';
 
         // Generate cards for each food item
-        foodItems.forEach((item, i) => {
+        foodItems.forEach((item) => {
             // Create column
             const col = document.createElement('div');
             col.className = 'col-md-3';
             
             // Create card
             const card = document.createElement('div');
-            card.className = 'card h-100 mb-4 glassmorphism'; // Added glassmorphism class
+            card.className = 'card h-100 mb-4 glassmorphism';
             card.style.textAlign = 'center';
             
             // Create card content
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text">${item.price}</p>
                     <div class="product-quantity-container">
-                        <select class = "js-quantity-selector-${i}">
+                        <select class="js-quantity-selector-${item.id}">
                         <option selected value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </select>
                     </div>
                     <button class="btn mt-auto align-self-end js-add-to-cart" style="background-color: rgba(255, 0, 0, 0.7); color: white;"
-                        data-id="${i}" data-name="${item.name}" data-price="${item.price}">
+                        data-id="${item.id}" data-name="${item.name}" data-price="${item.price}">
                         <i class="bi bi-cart-plus-fill"></i>
                     </button>
                 </div>
