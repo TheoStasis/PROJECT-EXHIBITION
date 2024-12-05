@@ -21,6 +21,7 @@
     />
     <title>Catalogue | Delivo</title>
     <link rel="stylesheet" href="css/catalogue.css" />
+    <link rel="stylesheet" href="css/search-results.css" />
   </head>
 
   <body>
@@ -67,9 +68,8 @@
               />
               <i class="fa-solid fa-magnifying-glass search-icon" style="color: #f7f7f7"></i>
 
-              <!-- search function                         -->
-
-              <template data-user-template>
+              <!-- search template -->
+              <template data-search-template>
                 <div class="card">
                   <div class="card-content d-flex">
                     <img
@@ -85,6 +85,9 @@
                   </div>
                 </div>
               </template>
+
+              <!-- search results container -->
+              <div class="search-results" data-search-results></div>
             </div>
 
             <div class="cart-container position-relative">
@@ -108,7 +111,7 @@
 
     <div class="user-cards" data-user-cards-container></div>
 
-    <!-- restaurant list 
+    <!-- restaurant list
     <div class="container mt-5">
         <h1 class="mb-4 page-title">Restaurants you can try:</h1>
         <hr class="mb-5"> -->
@@ -290,5 +293,6 @@
     <script src="https://files.bpcontent.cloud/2024/11/21/21/20241121211844-RWTPBL3L.js"></script>
     <script src="https://kit.fontawesome.com/2974af2fca.js" crossorigin="anonymous"></script>
     <script src="scripts/catalogue.js"></script>
+    <script type="module" src="scripts/init-search.js"></script>
   </body>
 </html>
