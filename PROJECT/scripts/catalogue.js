@@ -63,3 +63,38 @@ Promise.all([
         return { image: food.image, name: food.name, price: food.price, element: card, id: food.id }
     })
 })
+
+//Carousel//
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderTrack = document.querySelector('.slider-track');
+    const prevButton = document.querySelector('.nav-btn.prev');
+    const nextButton = document.querySelector('.nav-btn.next');
+    const sliderItems = document.querySelectorAll('.slider-item');
+    const itemWidth = sliderItems[0].offsetWidth; // Get the width of a single slider item
+    let currentIndex = 0;
+
+    // Function to update the slider position
+    function updateSlider() {
+        const offset = -currentIndex * itemWidth; // Calculate the offset
+        sliderTrack.style.transform = `translateX(${offset}px)`; // Move the slider
+    }
+
+    // Event listener for the next button
+    nextButton.addEventListener('click', function() {
+        currentIndex++;
+        if (currentIndex >= sliderItems.length) {
+            currentIndex = 0; // Loop back to the first item
+        }
+        updateSlider();
+    });
+
+    // Event listener for the previous button
+    prevButton.addEventListener('click', function() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = sliderItems.length - 1; // Loop back to the last item
+        }
+        updateSlider();
+    });
+    
+});

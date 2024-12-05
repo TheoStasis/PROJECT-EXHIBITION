@@ -323,3 +323,124 @@ hr {
 .card-txt {
     flex-grow: 1; /* Allow text to take up remaining space */
 }
+/*Carousel*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.large-text {
+    font-size: 5rem; /* Set font size for "What's in" */
+    font-weight: 9000; /* Optional: Adjust font weight */
+    /*font-family: "Raleway", sans-serif;*/
+}
+
+.small-text {
+    font-size: 3rem; /* Set font size for "What's on your mind?" */
+    font-weight: 600; /* Optional: Adjust font weight */
+    color: #666; /* Optional: Adjust color */
+    font-family: "Raleway", sans-serif;
+}
+
+.category-slider {
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0); /* Adjust the last value (0.5) for transparency */
+    width: 100%; /* Ensure the category slider takes full width */
+}
+
+.container {
+    max-width: 1200px; /* Keep the max width for content */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -35px;
+    padding: 0 20px;
+}
+
+.slider-header h2 {
+    font-size: 4rem;
+    font-weight: 800px;
+    color: #2e2e2e;
+    margin: 3rem;
+
+}
+
+.slider-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.nav-btn i {
+    font-size: 14px;
+    color: #666;
+}
+
+.slider-container {
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: transparent;
+    
+}
+
+.slider-track {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.3s ease;
+    
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.slider-item img {
+    width: 130px; /* Set a smaller width for the images */
+    height: 110px; /* Maintain aspect ratio */
+    max-height: 250px;
+    max-width: 350px; /* Set a maximum height for the images */
+    border-radius: 10px; /* Optional: Add some border radius */
+    object-fit: cover; /* Maintain aspect ratio */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.slider-item span {
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.slider-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.slider-item:hover span {
+    color: #333;
+}
