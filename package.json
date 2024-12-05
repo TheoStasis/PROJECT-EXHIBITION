@@ -1,0 +1,27 @@
+{
+  "name": "delivo",
+  "version": "1.0.0",
+  "description": "Food delivery website",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,jsx,json,css,html}\"",
+    "dev": "live-server"
+  },
+  "keywords": [
+    "food-delivery",
+    "restaurant",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "live-server": "^1.2.2",
+    "prettier": "^3.4.2"
+  }
+}

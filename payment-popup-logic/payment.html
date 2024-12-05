@@ -1,33 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Modal Example</title>
-    <link rel="stylesheet" href="payment.css">
-</head>
-<body>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
     <div class="container">
-        <button id="buy-button" onclick="proceedToBuy()">Proceed to Buy</button>
+      <button id="buy-button" onclick="proceedToBuy()">Proceed to Buy</button>
     </div>
 
     <!-- Payment Modal -->
     <div id="payment-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3>Payment Details</h3>
-            <form id="payment-form">
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Card Number" required>
-                <input type="text" placeholder="CVV" required>
-                <input type="text" placeholder="Amount" required>
-                <input type="text" placeholder="Expiry Date (MM/YY)" required>
-                <button type="submit">Pay Now</button>
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Payment Details</h3>
+        <form id="payment-form">
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Card Number" required />
+          <input type="text" placeholder="CVV" required />
+          <input type="text" placeholder="Amount" required />
+          <input type="text" placeholder="Expiry Date (MM/YY)" required />
+          <button type="submit">Pay Now</button>
+        </form>
+      </div>
     </div>
 
     <script src="payment.js
     "></script>
-</body>
+  </body>
 </html>

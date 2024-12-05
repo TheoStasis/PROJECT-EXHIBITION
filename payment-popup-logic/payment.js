@@ -7,9 +7,9 @@ function closeModal() {
 }
 
 // Handle form submission
-document.getElementById('payment-form').addEventListener('submit', function(event) {
+document.getElementById('payment-form').addEventListener('submit', function (event) {
   event.preventDefault();
-  
+
   // Here you would typically handle the payment processing logic
   alert('Payment processed!');
 
@@ -18,9 +18,9 @@ document.getElementById('payment-form').addEventListener('submit', function(even
 });
 
 // Close the modal when clicking outside of it
-window.onclick = function(event) {
+window.onclick = function (event) {
   const modal = document.getElementById('payment-modal');
   if (event.target === modal) {
-      closeModal();
+    closeModal();
   }
 };

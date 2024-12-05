@@ -1,255 +1,259 @@
 .custom-navbar {
-    background-color: rgba(206, 206, 206, 0.44); 
-    backdrop-filter: blur(5px); 
-    box-shadow: 0 10px 50px rgba(59, 59, 59, 0.3); 
-    padding: 0.5rem 1rem;
-    border-bottom-style: solid;
-    border-color:rgb(176, 176, 176);
-    border-width: 2px;
+  background-color: rgba(206, 206, 206, 0.44);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 50px rgba(59, 59, 59, 0.3);
+  padding: 0.5rem 1rem;
+  border-bottom-style: solid;
+  border-color: rgb(176, 176, 176);
+  border-width: 2px;
 }
 
 .navbar .nav-link {
-    color: rgb(43, 43, 43);
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
+  color: rgb(43, 43, 43);
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-    color: #8e8e8e;
+  color: #8e8e8e;
 }
 .profile-pic {
-    width: 40px; 
-    height: 40px;
-    border-radius: 50%; 
-    object-fit: cover;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-pfp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar-nav .nav-item {
-    margin: 0 1vw 0 1vw;
-    color: #ff5733;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
+  margin: 0 1vw 0 1vw;
+  color: #ff5733;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 .navbar-nav .nav-item .nav-link.active:hover {
-    color: #c70039; 
+  color: #c70039;
 }
 /* Search input styling */
 .search-container {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .search-icon {
-    position: absolute;
-    right: 210px; /* Position to the right of the search text */
-    color: rgba(23, 23, 23, 0.5);
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  right: 210px; /* Position to the right of the search text */
+  color: rgba(23, 23, 23, 0.5);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .form-control {
-    width: 100%; /* Ensure all fields take the full width of their container */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    background-color: rgba(7, 7, 7, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    color: black !important;
-    padding-left: 35px !important; /* Make room for the icon */
-    border-radius: 20px !important;
-    transition: all 0.3s ease !important;
+  width: 100%; /* Ensure all fields take the full width of their container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  background-color: rgba(7, 7, 7, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: black !important;
+  padding-left: 35px !important; /* Make room for the icon */
+  border-radius: 20px !important;
+  transition: all 0.3s ease !important;
 }
 
 .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    transition: opacity 0.3s ease;
+  color: rgba(255, 255, 255, 0.5);
+  transition: opacity 0.3s ease;
 }
 
 /* When input is focused */
 .form-control:focus {
-    background-color: rgba(23, 23, 23, 0.3); 
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 0 0.25rem rgba(30, 255, 0, 0.15);
+  background-color: rgba(23, 23, 23, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 0.25rem rgba(30, 255, 0, 0.15);
 }
 
 .form-control:focus::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 .form-control:focus + .search-icon {
-    opacity: 0;
+  opacity: 0;
 }
 .navbar-toggler {
-    border: 2px solid #ffffff !important;
-    padding: 8px 10px !important;
-    margin-right: 10px;
-    background-color: rgba(0, 0, 0, 0.5) !important;
+  border: 2px solid #ffffff !important;
+  padding: 8px 10px !important;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-    width: 25px !important;
-    height: 25px !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  width: 25px !important;
+  height: 25px !important;
 }
 
 .navbar-toggler:hover {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-    border-color: #1eff00 !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  border-color: #1eff00 !important;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    outline: none !important;
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important;
 }
 
 .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dropdown-item {
-    color: rgb(225, 225, 225);
+  color: rgb(225, 225, 225);
 }
 
 .dropdown-item:hover {
-    background-color: rgba(30, 255, 0, 0.1);
-    color: #1eff00;
+  background-color: rgba(30, 255, 0, 0.1);
+  color: #1eff00;
 }
 
 /*  */
 
 .navbar-brand {
-    padding: 0;
-    margin-right: 2rem;
+  padding: 0;
+  margin-right: 2rem;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    font-family: "Lily Script One", system-ui; 
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: 'Lily Script One', system-ui;
 }
 .search-container {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .search-icon {
-    position: absolute;
-    right: 210px; /* Position to the right of the search text */
-    color: rgba(255, 255, 255, 0.5);
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  right: 210px; /* Position to the right of the search text */
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 .cart {
-    background-color: #ffffff00;
-    border-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    padding: 8px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
+  background-color: #ffffff00;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 .cart:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .form-control:focus + .search-icon {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* background gradient */
 body {
-    background-image: url(/PROJECT/css/images/figma/contact-us-gradient.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(/PROJECT/css/images/figma/contact-us-gradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .glassmorphed-card {
-    background: rgba(96, 96, 96, 0.081);
-    backdrop-filter: blur(10px);
-    border-radius: 2rem;
-    height: 75vh;
-    width: 40vw;
-    border: 1px solid rgba(179, 178, 178, 0.573);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(96, 96, 96, 0.081);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  height: 75vh;
+  width: 40vw;
+  border: 1px solid rgba(179, 178, 178, 0.573);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .problem-title {
-    font-size: 4rem; /* Adjust size as needed */
-    font-weight: 800;
-    line-height: 1.2; /* Decrease line spacing */
-    text-align: left; /* Align to the right */
-    margin-bottom: 20px; /* Increase space below the title */
-    font-family: "Raleway", sans-serif;
-    color: rgb(70, 70, 70);
+  font-size: 4rem; /* Adjust size as needed */
+  font-weight: 800;
+  line-height: 1.2; /* Decrease line spacing */
+  text-align: left; /* Align to the right */
+  margin-bottom: 20px; /* Increase space below the title */
+  font-family: 'Raleway', sans-serif;
+  color: rgb(70, 70, 70);
 }
 
 .contact-us-text {
-    font-size: 1.75rem; /* Adjust size as needed */
-    font-weight: 500;
-    text-align: left; /* Align to the right */
-    font-family: "Raleway", sans-serif;
-    color: rgb(70, 70, 70);
-
-
+  font-size: 1.75rem; /* Adjust size as needed */
+  font-weight: 500;
+  text-align: left; /* Align to the right */
+  font-family: 'Raleway', sans-serif;
+  color: rgb(70, 70, 70);
 }
 
 .row {
-    align-items: center;
+  align-items: center;
 }
 
 /* form card */
-.name-field, .email-field {
-    margin-bottom: 3vh;
-    height: 8vh;
-    font-family: "Raleway", sans-serif;
-
+.name-field,
+.email-field {
+  margin-bottom: 3vh;
+  height: 8vh;
+  font-family: 'Raleway', sans-serif;
 }
 
 .description-field {
-    margin-bottom: 3vh;/* Increase left padding */
-    font-family: "Raleway", sans-serif;}
+  margin-bottom: 3vh; /* Increase left padding */
+  font-family: 'Raleway', sans-serif;
+}
 
-.problem-title, .contact-us-text {
-    padding-left: 7vw;
+.problem-title,
+.contact-us-text {
+  padding-left: 7vw;
 }
 
 .send-btn {
-    background-color: rgb(250, 226, 132);
-    border-style: none;
-    width: 40%;
-    height: 3rem;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-    border-radius: 5rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: rgb(250, 226, 132);
+  border-style: none;
+  width: 40%;
+  height: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 5rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .send-btn:hover {
-    background-color: rgb(220, 200, 100);
-    transform: scale(1.05);
+  background-color: rgb(220, 200, 100);
+  transform: scale(1.05);
 }
 
-.email-field::placeholder, .name-field::placeholder, .description-field::placeholder {
-    font-weight: 800;
-    padding: 0.5rem;
+.email-field::placeholder,
+.name-field::placeholder,
+.description-field::placeholder {
+  font-weight: 800;
+  padding: 0.5rem;
 }

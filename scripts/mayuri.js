@@ -1,35 +1,35 @@
 import { foodItems } from './mayuri_food_items.js';
-import { addToCart } from './cart.js'; 
+import { addToCart } from './cart.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Create container
-    const container = document.createElement('div');
-    container.className = 'container mt-5 mb-5';
-    document.body.appendChild(container);
+  // Create container
+  const container = document.createElement('div');
+  container.className = 'container mt-5 mb-5';
+  document.body.appendChild(container);
 
-    // Create row
-    const row = document.createElement('div');
-    row.className = 'row g-4';
-    container.appendChild(row);
+  // Create row
+  const row = document.createElement('div');
+  row.className = 'row g-4';
+  container.appendChild(row);
 
-    // Function to generate food item cards
-    const generateFoodCards = () => {
-        // Clear existing cards
-        row.innerHTML = '';
+  // Function to generate food item cards
+  const generateFoodCards = () => {
+    // Clear existing cards
+    row.innerHTML = '';
 
-        // Generate cards for each food item
-        foodItems.forEach((item) => {
-            // Create column
-            const col = document.createElement('div');
-            col.className = 'col-md-3';
-            
-            // Create card
-            const card = document.createElement('div');
-            card.className = 'card h-100 mb-4 glassmorphism';
-            card.style.textAlign = 'center';
-            
-            // Create card content
-            card.innerHTML = `
+    // Generate cards for each food item
+    foodItems.forEach((item) => {
+      // Create column
+      const col = document.createElement('div');
+      col.className = 'col-md-3';
+
+      // Create card
+      const card = document.createElement('div');
+      card.className = 'card h-100 mb-4 glassmorphism';
+      card.style.textAlign = 'center';
+
+      // Create card content
+      card.innerHTML = `
                 <img src="${item.image}" class="card-img-top" alt="Food" style="height: 200px; object-fit: cover;">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${item.name}</h5>
@@ -54,34 +54,34 @@ document.addEventListener('DOMContentLoaded', () => {
                     </button>
                 </div>
             `;
-            
-            // Add hover effect
-            card.style.transition = 'transform 0.3s ease';
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'scale(1.05)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'scale(1)';
-            });
-            
-            // Append card to column and column to row
-            col.appendChild(card);
-            row.appendChild(col);
-        });
-    };
 
-    // Initial generation of food cards
-    generateFoodCards();
+      // Add hover effect
+      card.style.transition = 'transform 0.3s ease';
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'scale(1.05)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'scale(1)';
+      });
 
-    // Add required Bootstrap Icons CSS
-    const linkElement = document.createElement('link');
-    linkElement.rel = 'stylesheet';
-    linkElement.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css';
-    document.head.appendChild(linkElement);
+      // Append card to column and column to row
+      col.appendChild(card);
+      row.appendChild(col);
+    });
+  };
 
-    // Add custom styles
-    const style = document.createElement('style');
-    style.textContent = `
+  // Initial generation of food cards
+  generateFoodCards();
+
+  // Add required Bootstrap Icons CSS
+  const linkElement = document.createElement('link');
+  linkElement.rel = 'stylesheet';
+  linkElement.href = 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css';
+  document.head.appendChild(linkElement);
+
+  // Add custom styles
+  const style = document.createElement('style');
+  style.textContent = `
         .glassmorphism {
             background: rgba(200, 200, 200, 0.5);
             backdrop-filter: blur(10px);
@@ -116,10 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
             color: #333;
         }
     `;
-    document.head.appendChild(style);
-    
-    // Event listener for add to cart buttons
-    document.querySelectorAll('.js-add-to-cart').forEach((button) => {
-        button.addEventListener('click', () => addToCart(button));
-    });
+  document.head.appendChild(style);
+
+  // Event listener for add to cart buttons
+  document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+    button.addEventListener('click', () => addToCart(button));
+  });
 });
