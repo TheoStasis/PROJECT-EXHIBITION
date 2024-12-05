@@ -2,26 +2,28 @@
   "name": "delivo",
   "version": "1.0.0",
   "description": "Food delivery website",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "live-server",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"**/*.{js,jsx,json,css,html}\"",
-    "dev": "live-server"
+    "format": "prettier --write \"**/*.{js,jsx,json,css,html}\""
   },
   "keywords": [
     "food-delivery",
     "restaurant",
     "website"
   ],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "live-server": "^1.2.2",
     "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
   }
 }
