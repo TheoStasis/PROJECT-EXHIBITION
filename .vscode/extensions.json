@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ritwickdey.LiveServer",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.path-intellisense",
+    "ms-vsliveshare.vsliveshare",
+    "pranaygp.vscode-css-peek",
+    "ecmel.vscode-html-css",
+    "zignd.html-css-class-completion",
+    "mhutchie.git-graph",
+    "wix.vscode-import-cost"
+  ]
+}

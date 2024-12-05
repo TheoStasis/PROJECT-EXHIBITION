@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Delivo</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/home-page.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body>
+    <!-- Updated Navbar from homepage -->
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home-page.html">
+          <div class="logo">
+            <img class="logo" src="./css/images/figma/delivo.svg" />
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="catalogue.html">Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <div class="search-container">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="fa-solid fa-magnifying-glass search-icon" style="color: #f7f7f7"></i>
+            </div>
+            <div class="cart-container position-relative">
+              <a href="cart.html" class="cart">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  <span class="cart-count fw-bold text-white js-cart-quantity-number">0</span>
+                  <span class="visually-hidden">items in cart</span>
+                </span>
+              </a>
+            </div>
+            <a href="profile.html" class="user-pfp">
+              <img src="css/images/figma/user-pfp.jpg" style="border-radius: 50%; width: 3vw" />
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profile-container">
+      <!-- Sidebar Navigation -->
+      <div class="sidebar">
+        <div class="nav-item active">
+          <div class="nav-item-content">
+            <i class="bi bi-person fs-4"></i>
+            <span class="nav-text">Profile</span>
+          </div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-item-content">
+            <i class="bi bi-bag fs-4"></i>
+            <span class="nav-text">Orders</span>
+          </div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-item-content">
+            <i class="bi bi-gear fs-4"></i>
+            <span class="nav-text">Settings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="profile-header">
+          <div class="profile-image-container">
+            <img src="images/profile-placeholder.png" alt="Profile Picture" class="profile-image" />
+          </div>
+          <h1 class="profile-name">Your Name</h1>
+        </div>
+
+        <!-- Profile Information -->
+        <div class="profile-info">
+          <div class="info-section">
+            <h2>Personal Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <label>Full Name</label>
+                <input type="text" value="Your Name" readonly />
+              </div>
+              <div class="info-item">
+                <label>Email</label>
+                <input type="email" value="your.email@google.com" readonly />
+              </div>
+              <div class="info-item">
+                <label>Phone</label>
+                <input type="tel" value="+1 234 567 8900" readonly />
+              </div>
+              <div class="info-item">
+                <label>Location</label>
+                <input type="text" value="Your Address" readonly />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2974af2fca.js" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,598 @@
+/* @keyframes hero-gradient-animation {
+    0% {
+        --y-0: 56%;
+        --x-0: 13%;
+        --c-0: hsla(338.82352941176464, 100%, 95%, 1);
+        --s-start-0: 11%;
+        --s-end-0: 85%;
+    }
+
+    25% {
+        --y-0: 80%;
+        --x-0: 45%;
+        --c-0: hsla(105.88235294117652, 58%, 73%, 1);
+        --s-start-0: 18%;
+        --s-end-0: 91.11735644972468%;
+    }
+
+    50% {
+        --y-0: 52%;
+        --x-0: 84%;
+        --c-0: hsla(42.352941176470594, 69%, 72%, 1);
+        --s-start-0: 35.87621923239834%;
+        --s-end-0: 84%;
+    }
+
+    75% {
+        --y-0: 22%;
+        --x-0: 50%;
+        --c-0: hsla(218.38235294117646, 78%, 76%, 1);
+        --s-start-0: 58.70204953113234%;
+        --s-end-0: 84%;
+    }
+
+    100% {
+        --y-0: 56%;
+        --x-0: 13%;
+        --c-0: hsla(336.92307692307696, 100%, 94%, 1);
+        --s-start-0: 74.48200345326619%;
+        --s-end-0: 84%;
+    }
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 56%
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(338.82352941176464, 100%, 95%, 1)
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 11%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
+body {
+    --y-0: 56%;
+    --x-0: 13%;
+    --c-0: hsla(338.82352941176464, 100%, 95%, 1);
+    ;
+    background-color: hsla(88, 0%, 100%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0));
+    animation: hero-gradient-animation 10s linear infinite normal;
+    background-blend-mode: multiply;
+} */
+@keyframes hero-gradient-animation {
+  0% {
+    --x-0: 98%;
+    --c-0: hsla(180, 0%, 100%, 0.86);
+    --s-start-0: 2%;
+    --s-end-0: 78.72573401919361%;
+    --y-0: 98%;
+  }
+
+  100% {
+    --x-0: 2%;
+    --c-0: hsla(49, 0%, 100%, 0.86);
+    --s-start-0: 2%;
+    --s-end-0: 78.72573401919361%;
+    --y-0: 98%;
+  }
+}
+
+@property --x-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 98%;
+}
+
+@property --c-0 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(180, 0%, 100%, 0.86);
+}
+
+@property --s-start-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%;
+}
+
+@property --s-end-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 78.72573401919361%;
+}
+
+@property --y-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 98%;
+}
+
+@property --y-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 91%;
+}
+
+@property --x-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 98%;
+}
+
+@property --c-1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(49, 85%, 73%, 0.42);
+}
+
+@property --s-start-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%;
+}
+
+@property --s-end-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 78.72573401919361%;
+}
+
+@property --y-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 87%;
+}
+
+@property --x-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 16%;
+}
+
+@property --s-start-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%;
+}
+
+@property --s-end-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 61.288600779667334%;
+}
+
+@property --c-2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(306, 85%, 73%, 0.42);
+}
+
+@property --y-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 79%;
+}
+
+@property --x-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 52%;
+}
+
+@property --s-start-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%;
+}
+
+@property --s-end-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 61.288600779667334%;
+}
+
+@property --c-3 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(17, 85%, 73%, 0.42);
+}
+
+@property --s-start-4 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 2%;
+}
+
+@property --s-end-4 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 61.288600779667334%;
+}
+
+@property --x-4 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 94%;
+}
+
+@property --c-4 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(230, 85%, 73%, 0.42);
+}
+
+@property --y-4 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 13%;
+}
+
+body {
+  --x-0: 98%;
+  --c-0: hsla(180, 0%, 100%, 0.86);
+  --y-0: 98%;
+  --y-1: 91%;
+  --x-1: 98%;
+  --c-1: hsla(49, 85%, 73%, 0.42);
+  --y-2: 87%;
+  --x-2: 16%;
+  --c-2: hsla(306, 85%, 73%, 0.42);
+  --y-3: 79%;
+  --x-3: 52%;
+  --c-3: hsla(17, 85%, 73%, 0.42);
+  --x-4: 94%;
+  --c-4: hsla(230, 85%, 73%, 0.42);
+  --y-4: 13%;
+  background-color: hsla(323, 14%, 16%, 1);
+  background-image: radial-gradient(
+      circle at var(--x-0) var(--y-0),
+      var(--c-0) var(--s-start-0),
+      transparent var(--s-end-0)
+    ),
+    radial-gradient(
+      circle at var(--x-1) var(--y-1),
+      var(--c-1) var(--s-start-1),
+      transparent var(--s-end-1)
+    ),
+    radial-gradient(
+      circle at var(--x-2) var(--y-2),
+      var(--c-2) var(--s-start-2),
+      transparent var(--s-end-2)
+    ),
+    radial-gradient(
+      circle at var(--x-3) var(--y-3),
+      var(--c-3) var(--s-start-3),
+      transparent var(--s-end-3)
+    ),
+    radial-gradient(
+      circle at var(--x-4) var(--y-4),
+      var(--c-4) var(--s-start-4),
+      transparent var(--s-end-4)
+    );
+  animation: hero-gradient-animation 10s linear infinite alternate;
+  background-blend-mode: overlay, normal, normal, normal, normal;
+}
+.custom-navbar {
+  background-color: rgba(12, 12, 12, 0.765);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgb(60, 59, 59);
+}
+
+.navbar .nav-link {
+  color: rgb(225, 225, 225);
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #8e8e8e;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  right: 210px; /* Position to the right of the search text */
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.form-control {
+  background-color: rgba(128, 128, 128, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  padding-left: 35px !important; /* Make room for the icon */
+  border-radius: 20px !important;
+  transition: all 0.3s ease !important;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+/* When input is focused */
+.form-control:focus {
+  background-color: rgba(128, 128, 128, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 0.25rem rgba(30, 255, 0, 0.15);
+}
+
+.form-control:focus::placeholder {
+  opacity: 0;
+}
+
+.form-control:focus + .search-icon {
+  opacity: 0;
+}
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 1vw 0 1vw;
+  color: #ff5733;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link.active:hover {
+  color: #c70039;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: 'Lily Script One', system-ui;
+}
+
+.cont {
+  min-height: 90vh;
+  margin-top: 1vw;
+}
+
+/* Login section */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-login {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sign-up {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: 2vw;
+}
+.ph-no,
+.password {
+  margin: 1vw 2vw;
+  height: 12vh;
+  border-radius: 20px;
+  padding: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  background: rgba(239, 239, 239, 0.517);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ph-no::placeholder,
+.password::placeholder {
+  color: black;
+}
+.sign-up-btn {
+  height: 8vh;
+  margin: 2vw 8vw 2vw 8vw;
+}
+hr {
+  border: none;
+  height: 6px;
+  background-color: black;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/* img section */
+.carousel {
+  height: 90vh;
+  margin: 1vw;
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5,
+.b6,
+.b7,
+.b8,
+.b9,
+.b10,
+.b11,
+.b12 {
+  background: rgba(50, 50, 50, 0.454); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.b1 {
+  height: 3vh;
+  margin-bottom: 2vh;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 12px;
+}
+.b2 {
+  height: 23vh;
+  margin-bottom: 2vh;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.b3 {
+  height: 9vh;
+  border-top-right-radius: 12px;
+}
+
+.b4 {
+  height: 9vh;
+  margin-bottom: 2vh;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.b5 {
+  height: 23vh;
+  margin-bottom: 2vh;
+  border-radius: 12px;
+}
+.b6 {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 3vh;
+}
+
+.b7 {
+  height: 16vh;
+  margin-bottom: 2vh;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.b9 {
+  height: 21vh;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.b10 {
+  height: 23vh;
+  margin-bottom: 2vh;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 10px;
+}
+.b11 {
+  height: 23vh;
+  margin-bottom: 2vh;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.b12 {
+  height: 14vh;
+  border-bottom-right-radius: 10px;
+}
+
+.fd-1 {
+  background-image: url('./images/food-items/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg');
+}
+.fd-2 {
+  background-image: url('./images/food-items/chad-montano-MqT0asuoIcU-unsplash.jpg');
+}
+.fd-3 {
+  background-image: url('./images/food-items/jason-leung-AUAuEgUxg5Q-unsplash.jpg');
+}
+.fd-4 {
+  background-image: url('./images/food-items/mgg-vitchakorn-IiZ2Gqxm5Pg-unsplash.jpg');
+}
+.fd-5 {
+  background-image: url('./images/food-items/yubraj-timsina-eI_Uk6uGCOQ-unsplash.jpg');
+}
+
+.fd-1,
+.fd-2,
+.fd-3,
+.fd-4,
+.fd-5 {
+  background-size: cover; /* Ensures the background image covers the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.login-button {
+  margin-left: 6rem;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .login-section {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 1rem; /* Add some padding */
+  }
+  .login-button {
+    margin-left: 7rem;
+  }
+
+  .sub-login {
+    width: 90%; /* Make the login form take up more width */
+  }
+
+  .sign-up {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
+
+  .ph-no,
+  .password {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .sign-up-btn {
+    height: auto; /* Adjust button height */
+    padding: 1rem; /* Add padding */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.5vw; /* Reduce margin for smaller screens */
+  }
+
+  .profile-pic {
+    width: 30px; /* Reduce profile picture size */
+    height: 30px; /* Reduce profile picture size */
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-up {
+    font-size: 1.2rem; /* Further reduce font size for very small screens */
+  }
+
+  .navbar .nav-link {
+    padding: 0.3rem; /* Adjust padding for smaller screens */
+  }
+  .login-button {
+    margin-left: 2rem;
+  }
+}
