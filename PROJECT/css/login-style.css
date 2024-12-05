@@ -380,7 +380,7 @@ color: #c70039;
 }
 .ph-no, .password {
    margin: 1vw 2vw;
-   height: 4vh;
+   height: 12vh;
    border-radius: 20px;
    padding: 2rem;
    font-family: "Raleway", sans-serif;
@@ -504,12 +504,18 @@ hr{
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
+.login-button{
+    margin-left: 6rem;
+}
 
 /* Add media queries for responsiveness */
 @media (max-width: 768px) {
     .login-section {
         flex-direction: column; /* Stack elements vertically on smaller screens */
         padding: 1rem; /* Add some padding */
+    }
+    .login-button{
+        margin-left: 7rem;
     }
 
     .sub-login {
@@ -547,6 +553,9 @@ hr{
 
     .navbar .nav-link {
         padding: 0.3rem; /* Adjust padding for smaller screens */
+    }
+    .login-button{
+        margin-left: 2rem;
     }
 }
 
