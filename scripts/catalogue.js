@@ -62,7 +62,7 @@ Promise.all([
   });
 });
 
-//Carousel//
+// Carousel
 document.addEventListener('DOMContentLoaded', function () {
   const sliderTrack = document.querySelector('.slider-track');
   const prevButton = document.querySelector('.nav-btn.prev');
@@ -70,6 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const sliderItems = document.querySelectorAll('.slider-item');
   const itemWidth = sliderItems[0].offsetWidth; // Get the width of a single slider item
   let currentIndex = 0;
+  const autoScrollInterval = 2000; // Time in milliseconds for auto-scroll (3 seconds)
+  let autoScroll; // Variable to hold the auto-scroll interval
 
   // Function to update the slider position
   function updateSlider() {
@@ -84,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
       currentIndex = 0; // Loop back to the first item
     }
     updateSlider();
+    resetAutoScroll(); // Reset auto-scroll on manual navigation
   });
 
   // Event listener for the previous button
@@ -93,5 +96,26 @@ document.addEventListener('DOMContentLoaded', function () {
       currentIndex = sliderItems.length - 1; // Loop back to the last item
     }
     updateSlider();
+    resetAutoScroll(); // Reset auto-scroll on manual navigation
   });
+
+  // Auto-scroll functionality
+  function startAutoScroll() {
+    autoScroll = setInterval(function () {
+      currentIndex++;
+      if (currentIndex >= sliderItems.length) {
+        currentIndex = 0; // Loop back to the first item
+      }
+      updateSlider();
+    }, autoScrollInterval);
+  }
+
+  // Function to reset auto-scroll
+  function resetAutoScroll() {
+    clearInterval(autoScroll); // Clear the existing interval
+    startAutoScroll(); // Restart the auto-scroll
+  }
+
+  // Start auto-scroll on page load
+  startAutoScroll();
 });
