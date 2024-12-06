@@ -1,37 +1,28 @@
 [
   {
-    "id": "MAY-018",
-    "name": "Vada Sambhar",
+    "id": "MAY-001",
+    "name": "Aloo Mutter Samosa",
+    "price": "₹20",
+    "quantity": 3,
+    "image": "./css/images/food-items/Mayuri/aloo mutter samosa.png"
+  },
+  {
+    "id": "MAY-002",
+    "name": "Aloo Tikki",
     "price": "₹50",
-    "quantity": 3,
-    "image": "./css/images/food-items/Mayuri/vada sambhar.png"
-  },
-  {
-    "id": "MAY-019",
-    "name": "Veg Burger",
-    "price": "₹60",
-    "quantity": 3,
-    "image": "./css/images/food-items/Mayuri/veg burger.jpg"
-  },
-  {
-    "id": "MAY-022",
-    "name": "Veg Steam Momo",
-    "price": "₹80",
-    "quantity": 7,
-    "image": "./css/images/food-items/Mayuri/veg steam momo.jpg"
-  },
-  {
-    "id": "MAY-027",
-    "name": "Kiwi Punch",
-    "price": "₹80",
     "quantity": 1,
-    "image": "./css/images/food-items/Mayuri/kiwi punch.jpg"
+    "image": "./css/images/food-items/Mayuri/ALOO TIKKI.png"
   },
   {
-    "id": "MAY-028",
-    "name": "Pineapple Soda",
-    "price": "₹80",
-    "quantity": 1,
-    "image": "./css/images/food-items/Mayuri/pineapple juice.jpg"
+    "id": "UB-001",
+    "name": "Sweet Corn Pizza",
+    "price": "₹200",
+    "quantity": 1
+  },
+  {
+    "id": "UB-036",
+    "name": "Double Cheese Sandwich",
+    "price": "₹89",
+    "quantity": 1
   }
 ]
