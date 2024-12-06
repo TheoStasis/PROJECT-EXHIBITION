@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </select>
                     </div>
                     <button class="btn mt-auto align-self-end js-add-to-cart" style="background-color: rgba(255, 0, 0, 0.7); color: white;"
-                        data-id="${item.id}" data-name="${item.name}" data-price="${item.price}">
+                        data-id="${item.id}" data-name="${item.name}" data-price="${item.price}" data-image="${item.image}">
                         <i class="bi bi-cart-plus-fill"></i>
                     </button>
                 </div>
@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
             border: 1px solid rgba(255, 255, 255, 0.18);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         }
-        
+
         .card-body {
             padding: 1.25rem;
         }
-        
+
         .btn {
             width: 50px;
             height: 50px;
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             border: 1px solid rgba(255, 255, 255, 0.18);
             font-size: 1.2rem;
         }
-        
+
         .btn:hover {
             background-color: rgba(204, 0, 0, 0.8) !important;
         }
