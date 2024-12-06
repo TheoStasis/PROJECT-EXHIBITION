@@ -1,9 +1,37 @@
 [
   {
-    "id": "MAY-001",
-    "name": "Aloo Mutter Samosa",
-    "price": "₹20",
+    "id": "MAY-018",
+    "name": "Vada Sambhar",
+    "price": "₹50",
     "quantity": 3,
-    "image": "./css/images/food-items/Mayuri/aloo mutter samosa.png"
+    "image": "./css/images/food-items/Mayuri/vada sambhar.png"
+  },
+  {
+    "id": "MAY-019",
+    "name": "Veg Burger",
+    "price": "₹60",
+    "quantity": 3,
+    "image": "./css/images/food-items/Mayuri/veg burger.jpg"
+  },
+  {
+    "id": "MAY-022",
+    "name": "Veg Steam Momo",
+    "price": "₹80",
+    "quantity": 7,
+    "image": "./css/images/food-items/Mayuri/veg steam momo.jpg"
+  },
+  {
+    "id": "MAY-027",
+    "name": "Kiwi Punch",
+    "price": "₹80",
+    "quantity": 1,
+    "image": "./css/images/food-items/Mayuri/kiwi punch.jpg"
+  },
+  {
+    "id": "MAY-028",
+    "name": "Pineapple Soda",
+    "price": "₹80",
+    "quantity": 1,
+    "image": "./css/images/food-items/Mayuri/pineapple juice.jpg"
   }
 ]

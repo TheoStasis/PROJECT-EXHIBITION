@@ -66,7 +66,7 @@ function displayCartItems(cartItems) {
     document.getElementById('subtotal').textContent = `₹${subtotal.toFixed(2)}`;
     const tax = subtotal * 0.05;
     document.getElementById('tax').textContent = `₹${tax.toFixed(2)}`;
-    const discount = 0; // You can implement discount logic here
+    const discount = 0; // discount logic here
     document.getElementById('discount').textContent = `₹${discount.toFixed(2)}`;
     const shipping = 40; // Fixed shipping charge
     document.getElementById('shipping').textContent = `₹${shipping.toFixed(2)}`;
