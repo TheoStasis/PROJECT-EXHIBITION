@@ -11,8 +11,6 @@ export function addToCart(button) {
 			quantity: quantity,
 			image: button.dataset.image
 		};
-		cart.push(foodItem);
-		updateCartQuantity();
 
 		// Send the food item to the server to update cart.json
 		fetch('/update-cart', {
@@ -20,7 +18,7 @@ export function addToCart(button) {
 			headers: {
 				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify(foodItem)
+			body: JSON.stringify(foodItem) // Send the food item
 		})
 		.then(response => {
 			if (!response.ok) {

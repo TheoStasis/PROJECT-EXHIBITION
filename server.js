@@ -26,8 +26,15 @@ app.post('/update-cart', (req, res) => {
             cart = JSON.parse(data);
         }
 
-        // Add the new item to the cart
-        cart.push(newItem);
+        // Check if the item already exists in the cart
+        const existingItemIndex = cart.findIndex(item => item.id === newItem.id);
+        if (existingItemIndex > -1) {
+            // Item exists, increment the quantity
+            cart[existingItemIndex].quantity += newItem.quantity; // Increment by the quantity being added
+        } else {
+            // Item does not exist, add it to the cart
+            cart.push(newItem);
+        }
 
         // Write the updated cart back to cart.json
         fs.writeFile(path.join(__dirname, 'json/cart.json'), JSON.stringify(cart, null, 2), (err) => {
