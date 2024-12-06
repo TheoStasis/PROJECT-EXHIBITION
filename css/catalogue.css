@@ -192,10 +192,9 @@ hr {
 }
 
 .restaurant-card {
-  background: rgba(255, 255, 255, 0.309);
+  background: white !important;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 15px;
   transition:
     transform 0.3s ease,
@@ -214,7 +213,7 @@ hr {
 }
 
 .card-title {
-  color: #3d3d3d;
+  color: #454444;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   font-weight: 800;
@@ -241,6 +240,8 @@ hr {
 
 .card-text {
   font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 1rem;
 }
 
 .page-title {
@@ -329,16 +330,13 @@ body {
 }
 .large-text {
   font-size: 5rem; /* Set font size for "What's in" */
-  font-weight: 9000; /* Optional: Adjust font weight */
-  /*font-family: "Raleway", sans-serif;*/
+  font-weight: 800; /* Optional: Adjust font weight */
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 5vh;
+  color: rgb(79, 77, 77);
 }
 
-.small-text {
-  font-size: 3rem; /* Set font size for "What's on your mind?" */
-  font-weight: 600; /* Optional: Adjust font weight */
-  color: #666; /* Optional: Adjust color */
-  font-family: 'Raleway', sans-serif;
-}
+
 
 .category-slider {
   padding: 20px 0;
@@ -364,12 +362,14 @@ body {
   font-size: 4rem;
   font-weight: 800px;
   color: #2e2e2e;
-  margin: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
 }
 
 .slider-nav {
   display: flex;
-  gap: 8px;
+  gap: 1rem;
 }
 
 .nav-btn {
@@ -402,7 +402,8 @@ body {
 
 .slider-track {
   display: flex;
-  gap: 40px;
+  margin-left: 5rem;
+  gap: 3rem;
   transition: transform 0.3s ease;
 }
 
@@ -416,8 +417,8 @@ body {
 }
 
 .slider-item img {
-  width: 130px; /* Set a smaller width for the images */
-  height: 110px; /* Maintain aspect ratio */
+  width: 8rem; /* Set a smaller width for the images */
+  height: 7rem; /* Maintain aspect ratio */
   max-height: 250px;
   max-width: 350px; /* Set a maximum height for the images */
   border-radius: 10px; /* Optional: Add some border radius */
@@ -438,4 +439,20 @@ body {
 
 .slider-item:hover span {
   color: #333;
+}
+
+.horizontal-line {
+    width: 50vw; /* Set the width to 50% of the viewport width */
+    height: 5px; /* Set the height to 5px */
+    background-color: #8e8e8e; /* Set the color of the line to dark grey */
+    border-radius: 10px; /* Round the edges */
+    margin: 4rem auto 20px; /* Increase the top margin to 40px and center the line */
+}
+
+.restaurants-title {
+    color: #333; /* Set the text color */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; /* Bold text */
+    margin-top: 2vh;
+    font-size: 2.5rem !important;
 }
