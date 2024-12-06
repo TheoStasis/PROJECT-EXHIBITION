@@ -78,9 +78,6 @@ export function createPaymentModals() {
 						<button type="button" class="btn btn-outline-primary w-100 mb-3" id="qrCodePayment">
 							QR Code Scanner
 						</button>
-						<button type="button" class="btn btn-outline-primary w-100" id="debitCardPayment">
-							Debit Card
-						</button>
 					</div>
 				</div>
 			</div>
