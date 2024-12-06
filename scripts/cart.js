@@ -147,12 +147,18 @@ export function initializePaymentModal() {
 			const mainPaymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
 			mainPaymentModal.show();
 
-			// Cash on Delivery
-			const cashButton = document.getElementById('cashOnDelivery');
-			cashButton.addEventListener('click', () => {
-				alert('Cash on Delivery selected');
-				mainPaymentModal.hide();
-			});
+      // Cash on Delivery
+      const cashButton = document.getElementById('cashOnDelivery');
+      cashButton.addEventListener('click', () => {
+        mainPaymentModal.hide();
+        const thanksModal = new bootstrap.Modal(document.getElementById('thanksModal'));
+        thanksModal.show();
+
+        // Auto-close thanks modal after 2.5 seconds
+        setTimeout(() => {
+          thanksModal.hide();
+        }, 2500);
+      });
 
 			// Online Payment
 			const onlineButton = document.getElementById('onlinePayment');
@@ -197,22 +203,22 @@ export function initializePaymentModal() {
 						const thanksModal = new bootstrap.Modal(document.getElementById('thanksModal'));
 						thanksModal.show();
 
-						// Auto-close thanks modal after 5 seconds
-						setTimeout(() => {
-							thanksModal.hide();
-						}, 5000);
-					});
-				});
+            // Auto-close thanks modal after 2.5 seconds
+            setTimeout(() => {
+              thanksModal.hide();
+            }, 2500);
+          });
+        });
 
-				// Debit Card Payment
-				const debitCardButton = document.getElementById('debitCardPayment');
-				debitCardButton.addEventListener('click', () => {
-					alert('Debit Card Payment selected');
-					onlinePaymentModal.hide();
-				});
-			});
-		});
-	}
+        // // Debit Card Payment
+        // const debitCardButton = document.getElementById('debitCardPayment');
+        // debitCardButton.addEventListener('click', () => {
+        //   alert('Debit Card Payment selected');
+        //   onlinePaymentModal.hide();
+        // });
+      });
+    });
+  }
 }
 
 // Initialize when DOM is loaded
