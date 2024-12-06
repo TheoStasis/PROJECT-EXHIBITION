@@ -58,9 +58,6 @@ export function createPaymentModals() {
             <button type="button" class="btn btn-outline-primary w-100 mb-3" id="qrCodePayment">
               QR Code Scanner
             </button>
-            <button type="button" class="btn btn-outline-primary w-100" id="debitCardPayment">
-              Debit Card
-            </button>
           </div>
         </div>
       </div>
@@ -128,8 +125,14 @@ export function initializePaymentModal() {
       // Cash on Delivery
       const cashButton = document.getElementById('cashOnDelivery');
       cashButton.addEventListener('click', () => {
-        alert('Cash on Delivery selected');
         mainPaymentModal.hide();
+        const thanksModal = new bootstrap.Modal(document.getElementById('thanksModal'));
+        thanksModal.show();
+
+        // Auto-close thanks modal after 2.5 seconds
+        setTimeout(() => {
+          thanksModal.hide();
+        }, 2500);
       });
 
       // Online Payment
@@ -175,19 +178,19 @@ export function initializePaymentModal() {
             const thanksModal = new bootstrap.Modal(document.getElementById('thanksModal'));
             thanksModal.show();
 
-            // Auto-close thanks modal after 5 seconds
+            // Auto-close thanks modal after 2.5 seconds
             setTimeout(() => {
               thanksModal.hide();
-            }, 5000);
+            }, 2500);
           });
         });
 
-        // Debit Card Payment
-        const debitCardButton = document.getElementById('debitCardPayment');
-        debitCardButton.addEventListener('click', () => {
-          alert('Debit Card Payment selected');
-          onlinePaymentModal.hide();
-        });
+        // // Debit Card Payment
+        // const debitCardButton = document.getElementById('debitCardPayment');
+        // debitCardButton.addEventListener('click', () => {
+        //   alert('Debit Card Payment selected');
+        //   onlinePaymentModal.hide();
+        // });
       });
     });
   }
