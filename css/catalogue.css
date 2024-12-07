@@ -399,6 +399,7 @@ body {
   overflow: hidden;
   padding: 0 20px;
   background-color: transparent;
+  padding-bottom: 20px;
 }
 
 .slider-track {
@@ -426,13 +427,45 @@ body {
   object-fit: cover; /* Maintain aspect ratio */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.slider-item span {
-  color: #666;
-  font-size: 14px;
-  font-weight: 400;
+.category-slider .slider-item {
+  width: 200px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflow */
+  display: flex; /* Center the content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin: 0 auto; /* Center the item */
+  position: relative; /* Add relative positioning */
+  padding-bottom: 40px; /* Create space for the span */
 }
 
+.category-slider .slider-item img {
+  width: 100%; /* Make the image take full width */
+  height: 100%; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+}
+
+.category-slider .slider-item span {
+  position: absolute; /* Add absolute positioning */
+  bottom: -2px; /* Position the span below the image */
+  left: 50%; /* Center the span horizontally */
+  transform: translateX(-50%); /* Center the span horizontally */
+  font-size: 20px; /* Adjust font size as needed */
+  color: #333; /* Adjust color as needed */
+  background-color: #ffffff00; /* Add a background color */
+  padding: 5px 10px; /* Add some padding */
+  border-radius: 10px; /* Add a border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Add a box shadow */
+}
+
+.slider-item span {
+  display: block;
+  text-align: center;
+  margin-top: 10px; /* Add some space above the text */
+  color: #333;
+  font-size: 20px;
+}
 .slider-item:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
